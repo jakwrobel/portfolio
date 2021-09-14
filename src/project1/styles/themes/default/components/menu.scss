@@ -42,6 +42,7 @@
 
     &__subpages-wrap {
         @include flexCenter;
+        color: #5d5d5d;
     }
 
     &__subpage {
@@ -57,39 +58,17 @@
 
         a {
             text-decoration: none;
-        }
-
-        &:nth-of-type(1) a {
-            color: $c-deepBlush;
-        }
-
-        &:nth-of-type(2) a {
-            color: $c-black;
-        }
-
-        &:nth-of-type(3) a {
-            color: $c-white;
+            color: $c-scorpion;
         }
 
         &:hover {
             cursor: pointer;
             background-color: $c-deepBlush;
             color: $c-white;
-            transition: 0.3s all linear;
         }
 
         &:hover a {
             color: $c-white;
-        }
-
-        &:first-child {
-            color: $c-deepBlush;
-        }
-
-        &:nth-child(3) {
-            background-color: $c-deepBlush;
-            color: $c-white;
-            @include borderRadius(30%, 50%);
         }
     }
 }
@@ -134,7 +113,6 @@
     .menu {
         &--clicked {
             height: 20vh;
-            transition: 1s all ease-in-out
         }
 
         &__mid-col {
@@ -157,7 +135,6 @@
 
         &--clicked {
             justify-content: center;
-            align-items: space-between;
             position: static;
             width: 100%;
             height: 50%;
@@ -170,6 +147,9 @@
 
         &__button {
             @include flexCenter;
+            position: absolute;
+            top:0.5rem;
+            left:0;
             margin-left: $space-x-large;
             transform: rotate(90deg);
             font: $font-menu-large;

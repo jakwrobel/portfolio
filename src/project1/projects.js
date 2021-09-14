@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react'
-// import './projects-styles.css'
 
 const Projects= ()=>{
     

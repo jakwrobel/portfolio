@@ -1,5 +1,5 @@
 import React from 'react'
-// import './contact-styles.css'
+
 import Footer from './footer'
 
 const Contact= ()=>{

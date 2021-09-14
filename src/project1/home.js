@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import './home-styles.css'
 import AboutMe from './aboutMe'
 
 const Home = () => {
