@@ -46,12 +46,6 @@ const Home = () => {
     const movableStripe = document.querySelector('.mid-header__stripe')
     useEffect(()=>{window.addEventListener('scroll', function() { accordionStripe(document.querySelector('.mid-header__stripe'), 230, 'mid-header__animate-stripe') })})
 
-   const [teststate,increase] = useState(10)
-   const test = ()=>{
-    increase(teststate+1)
-    console.log(teststate)
-   }
-
     return (
         <div className="home__underlay">
         <div className="home">
@@ -68,7 +62,7 @@ const Home = () => {
                         <div className="mid-header__background-inscription">I'm
                         </div>
                         <h1><span className="mid-header__title-wrap">Front-end developer <span>&</span> Programmer</span></h1>
-                        <h2>JAN KOWALSKI</h2>
+                        <h2>JAKUB WRÓBEL</h2>
                         <div className="mid-header__buttons-wrap">
                             <a href='' className='mid-header__button'>My projects</a>
                             <a href='' className='mid-header__button'>More about me</a>
@@ -83,7 +77,7 @@ const Home = () => {
                             </div>
                             <div className="mid-header__stripe-circle">
                             </div>
-                            <img src='./images/home_zdjecie.png' alt="Jan Kowalski" alt="Photo of Jan Kowalski"/>
+                            <img src='./images/ja.jpg' alt="Jakub Wróbel" alt="Photo of Jakub Wróbel"/>
                         </div>
                     </div>
                 </div>

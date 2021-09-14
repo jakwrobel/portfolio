@@ -146,12 +146,12 @@
 
         >img {
             position: absolute;
-            top: -0.4rem;
-            left: -5.4rem;
-            width: 45rem;
-            height: 45rem;
-            object-fit: cover;
-            clip-path: circle(11.5rem at 20.4rem 15.5rem);
+             top: 3.6rem;
+    left: 3.5rem;
+    width: 23rem;
+    height: 30rem;
+    object-fit: cover;
+    clip-path: circle(11.5rem at 11.5rem 11.5rem);
         }
     }
 
@@ -163,7 +163,7 @@
         height: 23rem;
         background-color: transparent;
         z-index: 1;
-        transform: rotate(30deg);
+        transform: rotate(10deg);
     }
 
     &__stripe-circle {
