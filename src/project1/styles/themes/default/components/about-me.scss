@@ -1,39 +1,3 @@
-.home {
-    display: flex;
-    position: relative;
-    height: 150vh;
-    background-color: $c-white;
-    clip-path: ellipse(100% 60% at 50% 40%);
-    box-sizing: border-box;
-
-
-    &__left-col {
-        width: 12.5%;
-    }
-
-    &__mid-col {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        width: 75%;
-        min-width: 60rem;
-        box-sizing: border-box;
-    }
-
-    &__right-col {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        width: 12.5%;
-    }
-}
-
-.mid-header {
-    display: flex;
-    height: 45%;
-    min-height: 30rem;
-}
-
 .mid-me {
     display: flex;
     flex-flow: column nowrap;
@@ -82,14 +46,17 @@
         border-radius: 50%;
 
         &--red {
+            @extend .window__light;
             background-color: $c-red-ribon;
         }
 
         &--yellow {
+            @extend .window__light;
             background-color: $c-pear;
         }
 
         &--green {
+            @extend .window__light;
             background-color: $c-olive-drab;
         }
     }
@@ -184,6 +151,7 @@
 
         @each $name, $level in $skills-level{
             &--#{$name}{
+                @extend .window__skill-level;
                 width: $level * 1%;
             }
         }

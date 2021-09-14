@@ -10,11 +10,14 @@ body{
 
 .home__underlay{
 	background-color: #f6f6f6;
+	z-index: 2;
+    position: relative;
 }
 .home{
 	display: flex;
 	position: relative;
 	height: 150vh;
+	margin-top: 10vh;
 	background-color: white;
 	clip-path: ellipse(100% 60% at 50% 40%);
 	box-sizing: border-box;

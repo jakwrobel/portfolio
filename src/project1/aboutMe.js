@@ -1,7 +1,26 @@
-import React,{useEffect} from 'react'
+import React,{useState, useEffect} from 'react'
 
 
 const AboutMe=()=>{
+
+    const [skills,changeSkills]=useState([
+        {name:"HTML",
+         level: "100%",
+         order: "first"},
+         {name:"CSS",
+         level: "95%",
+        order: "second"},
+         {name:"JavaScript",
+         level: "90%",
+         order: "third"},
+         {name:"SCSS",
+         level: "85%",
+         order: "fourth"},
+         {name:"React",
+         level: "90%",
+         order: "fifth"}
+        ])
+    
 
     function moveWindow(value,topPos,movableWindow){
  if(document.documentElement.querySelector('.home').offsetWidth>768){
@@ -55,7 +74,7 @@ function changeDimension(element) {
 }
 
 useEffect(()=>{
-    const light = document.querySelectorAll('.window__light')
+    const light = document.querySelectorAll('[class^=window__light--]')
     window.addEventListener('load', () => { changeDimension(light) })
     window.addEventListener('resize', () => { changeDimension(light) })
 })
@@ -66,22 +85,22 @@ useEffect(()=>{
                     <div className="window">
                         <div className="window__top-bar">
                             <div className="window__lights-wrap">
-                                <div className="window__light window__light--red">
+                                <div className="window__light--red">
                                 </div>
-                                <div className="window__light window__light--yellow">
+                                <div className="window__light--yellow">
                                 </div>
-                                <div className="window__light window__light--green">
+                                <div className="window__light--green">
                                 </div>
                             </div>
                             <div className="window__about">&sol; &sol; About
                             </div>
                         </div>
                         <div className="window__content">
-                            <h2><span className="grey">&sol; &sol;</span> About</h2>
+                            <h2><span className="grey">&#47; &#47;</span> About</h2>
                             <div className="window__description">
                                 <div className="window__me-skills">
                                     <h3><span className="grey">&lt;/</span>Me<span className="grey">&gt;</span></h3>
-                                    <h3><span className="grey">&lcub;</span></h3>
+                                    <h3><span className="grey">&#123;</span></h3>
                                     <div className="window__text">
                                         <span className="grey">"</span>Lorem ipsum dolor sit amet,
                                         consectetur adipiscing elit.
@@ -94,53 +113,12 @@ useEffect(()=>{
                                         Praesent efficitur condimentum erat at
                                         Nulla viverra sem sit amet tristique aliquam<span className="grey">"</span>
                                     </div>
-                                    <h3><span className="grey">}</span></h3>
+                                    <h3><span className="grey">&#125;</span></h3>
                                 </div>
                                 <div className="window__me-skills">
                                     <h3><span className="grey">&lt;/</span>Skills<span className="grey">&gt;</span></h3>
                                     <div className="window__skills-wrap">
-                                        <div className="window__skill-line">
-                                            <div className="window__skill-bar">
-                                                <div className="window__skill-level window__skill-level--first">HTML
-                                                </div>
-                                            </div>
-                                            <div className="window__skill-number">98%</div>
-                                        </div>
-                                        <div className="window__skill-line">
-                                            <div className="window__skill-bar">
-                                                <div className="window__skill-level window__skill-level--second">CSS
-                                                </div>
-                                            </div>
-                                            <div className="window__skill-number">90%</div>
-                                        </div>
-                                        <div className="window__skill-line">
-                                            <div className="window__skill-bar">
-                                                <div className="window__skill-level window__skill-level--third">JAVA SCRIPT
-                                                </div>
-                                            </div>
-                                            <div className="window__skill-number">75%</div>
-                                        </div>
-                                        <div className="window__skill-line">
-                                            <div className="window__skill-bar">
-                                                <div className="window__skill-level window__skill-level--fourth">REACT
-                                                </div>
-                                            </div>
-                                            <div className="window__skill-number">90%</div>
-                                        </div>
-                                        <div className="window__skill-line">
-                                            <div className="window__skill-bar">
-                                                <div className="window__skill-level window__skill-level--fifth">HTML
-                                                </div>
-                                            </div>
-                                            <div className="window__skill-number">90%</div>
-                                        </div>
-                                        <div className="window__skill-line">
-                                            <div className="window__skill-bar">
-                                                <div className="window__skill-level window__skill-level--sixth">HTML
-                                                </div>
-                                            </div>
-                                            <div className="window__skill-number">90%</div>
-                                        </div>
+                                       {skills.map((skill)=>(<Skill name={skill.name} level={skill.level} order={skill.order}/>))}
                                     </div>
                                 </div>
                             </div>
@@ -148,6 +126,18 @@ useEffect(()=>{
                     </div>
                 </div>
                 </>)
+}
+
+const Skill = ({name, level, order})=>{
+    return(
+        <div className="window__skill-line">
+            <div className="window__skill-bar">
+                <div className={`window__skill-level--${order}`}>{name}
+                </div>
+            </div>
+            <div className="window__skill-number">{level}</div>
+        </div>
+        )
 }
 
 export default AboutMe
