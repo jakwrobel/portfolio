@@ -1,0 +1,31 @@
+@mixin flexCenter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin borderRadius($first, $second){
+	border-top-right-radius: $first $second;
+    border-bottom-right-radius: $first $second;
+    border-top-left-radius: $first $second;
+    border-bottom-left-radius: $first $second;
+}
+
+@mixin createWidth{
+	@each $size in $sizes{
+		$index: index($sizes, $size);
+		.width-#{$index}{
+			width: $size;
+		}
+	}
+}
+
+// @mixin menuColors($colors){
+// 	@each $id, $color in $colors{
+// 		&--#{$id} a{
+// 			@extend .left-part-menu__subpage;
+// 			color: $color;
+// 			text-decoration: none;
+// 		}
+// 	}
+// }
