@@ -1,7 +1,7 @@
 .home {
     display: flex;
     position: relative;
-    height: 150vh;
+    height: 180vh;
     margin-top: 10vh;
     background-color: $c-white;
     clip-path: ellipse(100% 60% at 50% 40%);
@@ -50,7 +50,7 @@
 
 .mid-header {
     display: flex;
-    height: 45%;
+    height: 37.5%;
     min-height: 30rem;
 
     &__background-inscription {
@@ -180,7 +180,7 @@
 .right-header {
     display: flex;
     flex-flow: column nowrap;
-    height: 45%;
+    height: 37.5%;
     min-height: 30rem;
     justify-content: center;
 
@@ -213,7 +213,7 @@
 @media only screen and (max-width: 768px) {
 
     .home {
-        height: 250vh;
+        height: 300vh;
         min-height: 165rem;
         clip-path: ellipse(140% 60% at 50% 40%);
 
@@ -237,7 +237,7 @@
     .mid-header {
         flex-flow: column nowrap;
         align-items: center;
-        height: 60%;
+        height: 57%;
 
         &__stripe {
             left: 100%;
@@ -286,8 +286,7 @@
 @media only screen and (max-width: 480px) {
 
     .home {
-        clip-path: none;
-        height: 100rem;
+        clip-path: ellipse(180% 60% at 50% 40%);
     }
     .mid-header {
         height: 50%;
