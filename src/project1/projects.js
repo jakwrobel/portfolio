@@ -1,6 +1,21 @@
-import React,{useEffect} from 'react'
+import React,{useState,useEffect} from 'react'
 
 const Projects= ()=>{
+
+    const [projects, setProjects]=useState([
+    {name:"Portfolio",
+     technology:"React / JSX / SCSS",
+     imageUrl:"./images/project_quiz.webp"},
+    {name:"Quizz App",
+     technology:"React / JSX / SCSS",
+     imageUrl:"./images/project_quiz.webp"},
+     {name:"Project 3",
+     technology:"W trakcie przygotowań",
+     imageUrl:"./images/project_quiz.webp"},
+     {name:"Project 4",
+     technology:"W trakcie przygotowań",
+     imageUrl:"./images/project_quiz.webp"},
+])
     
 	return(
 		<div className="projects__underlay">
@@ -29,42 +44,7 @@ const Projects= ()=>{
                         </div>
                     </div>
                     <div className="content__imgs-wrap">
-                        <div className="image"><img src="./images/projects_logo1.png" alt="project 1"/>
-                            <div className="image__overlay">
-                                <div className="image__tittle-wrap">
-                                    <h2>Young</h2>
-                                    <h3>Java JS / Python / Ruby</h3>
-                                </div>
-                                <button>View</button>
-                            </div>
-                        </div>
-                        <div className="image"><img src="./images/projects_logo2.png" alt="project 2"/>
-                            <div className="image__overlay">
-                                <div className="image__tittle-wrap">
-                                    <h2>Young</h2>
-                                    <h3>Java JS / Python / Ruby</h3>
-                                </div>
-                                <button>View</button>
-                            </div>
-                        </div>
-                        <div className="image"><img src="./images/projects_logo3.png" alt="project 3"/>
-                            <div className="image__overlay">
-                                <div className="image__tittle-wrap">
-                                    <h2>Young</h2>
-                                    <h3>Java JS / Python / Ruby</h3>
-                                </div>
-                                <button>View</button>
-                            </div>
-                        </div>
-                        <div className="image"><img src="./images/projects_logo4.png" alt="project 4"/>
-                            <div className="image__overlay">
-                                <div className="image__tittle-wrap">
-                                    <h2>Young</h2>
-                                    <h3>Java JS / Python / Ruby</h3>
-                                </div>
-                                <button>View</button>
-                            </div>
-                        </div>
+                        {projects.map(project=>(<Project name={project.name} technology={project.technology} imgUrl={project.imageUrl}/>))}
                     </div>
                 </div>
                 <div className="content__right-col">
@@ -98,6 +78,23 @@ const Projects= ()=>{
             </svg>
         </div>
     </div>)
+}
+
+const Project = ({imgUrl, name, technology})=>{
+    return(
+        <div className="image"><img src={imgUrl} alt={name}/>
+                            <div className="image__overlay">
+                                <div className="image__tittle-wrap">
+                                    <h2>{name}</h2>
+                                    <h3>{technology}</h3>
+                                </div>
+                                <div className="image__buttons-wrap">
+                                <button>View</button>
+                                <button>Code</button>
+                                </div>
+                            </div>
+                        </div>
+        )
 }
 
 export default Projects
