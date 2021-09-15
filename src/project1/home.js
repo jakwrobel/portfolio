@@ -64,8 +64,8 @@ const Home = () => {
                         <h1><span className="mid-header__title-wrap">Front-end developer <span>&</span> Programmer</span></h1>
                         <h2>JAKUB WRÓBEL</h2>
                         <div className="mid-header__buttons-wrap">
-                            <a href='' className='mid-header__button'>My projects</a>
-                            <a href='' className='mid-header__button'>More about me</a>
+                            <a href='' className='mid-header__button'>Moje projekty</a>
+                            <a href='' className='mid-header__button'>Wiecej o mnie</a>
                         </div>
                     </div>
                     <div className="mid-header__right-part">
