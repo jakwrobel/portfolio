@@ -33,7 +33,7 @@ const Projects= ()=>{
                 <div className="content__left-col">
                 </div>
                 <div className="content__mid-col">
-                    <div className="content__buttons-wrap">
+                 {/*   <div className="content__buttons-wrap">
                         <div className="content__button">HTML
                         </div>
                         <div className="content__button">CSS
@@ -46,7 +46,7 @@ const Projects= ()=>{
                         </div>
                         <div className="content__button">IPSUM
                         </div>
-                    </div>
+                    </div>*/}
                     <div className="content__imgs-wrap">
                         {projects.map(project=>(<Project name={project.name} technology={project.technology} imgUrl={project.imageUrl} viewUrl={project.viewUrl} codeUrl={project.codeUrl}/>))}
                     </div>
