@@ -102,16 +102,17 @@ useEffect(()=>{
                                     <h3><span className="grey">&lt;/</span>Me<span className="grey">&gt;</span></h3>
                                     <h3><span className="grey">&#123;</span></h3>
                                     <div className="window__text">
-                                        <span className="grey">"</span>Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.
-                                        Praesent efficitur condimentum erat at
-                                        Nulla viverra sem sit amet tristique aliquam<span className="grey">"</span>
+                                        <span className="grey">"</span>Nazywam się Jakub Wróbel. Jestem absolwentem uniwersytetu
+                                        Adama Mickiewicza w Poznaniu (kierunek: geoinformacja inżynierska). Po studiach rozpocząłem
+                                        również naukę programowania w językach front-endowych. Większość czasu uczyłem się samodzielnie,
+                                        korzystajac z ogólnodostępnych źródeł, a zdobytą wiedzę uzupełniałem uczestnicząc w kursię programowania "easycode".
+                                        <span className="grey">"</span>
                                     </div>
                                     <div className="window__text">
-                                        <span className="grey">"</span>Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit.
-                                        Praesent efficitur condimentum erat at
-                                        Nulla viverra sem sit amet tristique aliquam<span className="grey">"</span>
+                                        <span className="grey">"</span>Do tej pory nauczyłem się tworzyć strony wykorzystując
+                                        HTML, CSS oraz SCSS, JavaScript i React. Planuję cały czas się rozwijać, zarówno poszerzając swoją
+                                        wiedzę o nowe technologie, jak i ucząc się lepiej korzystać już te poznane. Obecnie szukam swojej pierwszej
+                                        pracy związanej z programowaniem front-endu.<span className="grey">"</span>
                                     </div>
                                     <h3><span className="grey">&#125;</span></h3>
                                 </div>
