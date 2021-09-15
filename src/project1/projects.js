@@ -5,10 +5,14 @@ const Projects= ()=>{
     const [projects, setProjects]=useState([
     {name:"Portfolio",
      technology:"React / JSX / SCSS",
-     imageUrl:"./images/project_quiz.webp"},
+     imageUrl:"./images/project_portfolio.webp",
+    viewUrl:"http://www.jwrobel.pl",
+    codeUrl:"http://www.jwrobel.pl"},
     {name:"Quizz App",
      technology:"React / JSX / SCSS",
-     imageUrl:"./images/project_quiz.webp"},
+     imageUrl:"./images/project_quiz.webp",
+ viewUrl:"http://www.jwrobel.pl",
+    codeUrl:"http://www.jwrobel.pl"},
      {name:"Project 3",
      technology:"W trakcie przygotowań",
      imageUrl:"./images/project_quiz.webp"},
@@ -44,7 +48,7 @@ const Projects= ()=>{
                         </div>
                     </div>
                     <div className="content__imgs-wrap">
-                        {projects.map(project=>(<Project name={project.name} technology={project.technology} imgUrl={project.imageUrl}/>))}
+                        {projects.map(project=>(<Project name={project.name} technology={project.technology} imgUrl={project.imageUrl} viewUrl={project.viewUrl} codeUrl={project.codeUrl}/>))}
                     </div>
                 </div>
                 <div className="content__right-col">
@@ -80,7 +84,7 @@ const Projects= ()=>{
     </div>)
 }
 
-const Project = ({imgUrl, name, technology})=>{
+const Project = ({imgUrl, name, technology, viewUrl, codeUrl})=>{
     return(
         <div className="image"><img src={imgUrl} alt={name}/>
                             <div className="image__overlay">
@@ -89,8 +93,10 @@ const Project = ({imgUrl, name, technology})=>{
                                     <h3>{technology}</h3>
                                 </div>
                                 <div className="image__buttons-wrap">
-                                <button>View</button>
-                                <button>Code</button>
+                                <a href={viewUrl}>
+                                View
+                                </a>
+                                <a href={codeUrl}>Code</a>
                                 </div>
                             </div>
                         </div>
