@@ -28,11 +28,12 @@ const triggerMenu = ()=>{
     }
 }
 
-	return(
-		<div className='menu'>
+return(
+	<header className='menu'>
         <div className='menu__left-col'>
         </div>
-        <div className='menu__mid-col'>
+
+        <menu className='menu__mid-col'>
             <div className='left-part-menu'>
                 <div className="left-part-menu__button" onClick={triggerMenu}>|||</div>
                 <div className='left-part-menu__logo'>
@@ -45,20 +46,20 @@ const triggerMenu = ()=>{
                 </div>
             </div>
             <div className='right-part-menu'>
-                <div className='right-part-menu__item'>
+                <a href="https://www.facebook.com/kuba.wrobel.1" className='right-part-menu__item'>
                     <img src="./images/menu_facebook.png" alt="facebook icon"/>
-                </div>
-                <div className='right-part-menu__item'>
+                </a>
+                <a className='right-part-menu__item'>
                     <img src="./images/menu_instagram.png" alt="instagram icon"/>
-                </div>
-                <div className='right-part-menu__item'>
+                </a>
+                <a href="https://www.linkedin.com/in/jakub-wr%C3%B3bel-731931201/" className='right-part-menu__item'>
                     <img src="./images/menu_linkedin.png" alt="linkedin icon"/>
-                </div>
+                </a>
             </div>
-        </div>
+        </menu>
         <div className='menu__right-col'>
         </div>
-    </div>
+    </header>
     )
 }
 

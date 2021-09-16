@@ -74,6 +74,7 @@
     min-width: 12rem;
 
     &__item {
+        @include setFlex(row, center, center);
         margin: 0 $space-standard;
 
         &:hover {
