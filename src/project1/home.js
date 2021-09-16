@@ -93,35 +93,4 @@ const Home = () => {
     </div>)
 }
 
-// class Home extends React.Component{
-//     constructor(props){
-//         super(props)
-//         this.state={value:0}
-//         this.increase=this.increase.bind(this)
-//     }
-
-//      increase(){
-//         const e=2
-//         const Prom = new Promise((resolve,reject)=>{
-//             if(e){
-//                 resolve(e)
-//             }
-//             else{
-//                 reject('error')
-//             }
-//         }).then(()=>{this.setState(prev=>({value:prev.value+1}))}).then(console.log(this.state.value))
-//         }
-
-//     render(){
-//         return(
-//             <div>
-//                 <div>Stan: {this.state.value}</div>
-//                 <div>
-//                 <button onClick={this.increase}>Zwiększ</button>
-//                 </div>
-//             </div>
-//             )
-//     }
-// }
-
 export default Home
