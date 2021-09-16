@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import AboutMe from './project1/aboutMe'
 import Menu from './project1/menu'
 import Home from './project1/home'
-import Downpart from './project1/downpart'
 import Footer from './project1/footer'
 import Contact from './project1/contact'
 import Projects from './project1/projects'
