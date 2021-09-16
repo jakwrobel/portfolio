@@ -1,5 +1,5 @@
 .home {
-    display: flex;
+    @include setFlex(row, center, stretch);
     position: relative;
     height: 180vh;
     margin-top: 10vh;
@@ -26,18 +26,14 @@
     }
 
     &__mid-col {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
+        @include setFlex(column, flex-start, stretch);
         width: 75%;
         min-width: 0;
         box-sizing: border-box;
     }
 
     &__right-col {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
+        @include setFlex(column, flex-start, stretch);
         width: 12.5%;
     }
 
@@ -49,14 +45,12 @@
 }
 
 .mid-header {
-    display: flex;
+    @include setFlex(row, flex-start, stretch);
     height: 37.5%;
     min-height: 30rem;
 
     &__background-inscription {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        @include setFlex(row, center, flex-end);
         position: absolute;
         font-size: 13rem;
         line-height: 13rem;
@@ -65,9 +59,7 @@
     }
 
     &__left-part {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        @include setFlex(column, center, stretch);
         position: relative;
         width: 50%;
         min-width: 31rem;
@@ -98,12 +90,12 @@
     }
 
     &__buttons-wrap {
-        display: flex;
+        @include setFlex(row, flex-start, stretch);
         height: 3.2rem;
     }
 
     &__button {
-        @include flexCenter;
+       @include setFlex(row, center, center);
         width: 30%;
         min-width: 11rem;
         text-decoration: none;
@@ -129,9 +121,7 @@
     }
 
     &__right-part {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        @include setFlex(column, center, stretch);
         width: 50%;
         overflow: hidden;
     }
@@ -178,11 +168,9 @@
 }
 
 .right-header {
-    display: flex;
-    flex-flow: column nowrap;
+    @include setFlex(column, center, stetch);
     height: 37.5%;
     min-height: 30rem;
-    justify-content: center;
 
     &__stripe {
         height: 30rem;
@@ -235,8 +223,7 @@
     }
 
     .mid-header {
-        flex-flow: column nowrap;
-        align-items: center;
+        @include setFlex(column, center, center);
         height: 57%;
 
         &__stripe {
@@ -277,8 +264,7 @@
         }
 
         &__buttons-wrap {
-            display: flex;
-            justify-content: center;
+            @include setFlex(row, center, stretch);
         }
     }
 }
@@ -294,7 +280,6 @@
         &__background-inscription {
             font-size: 10rem;
         }
-
 
         &__left-part {
             min-width: 30rem;

@@ -1,5 +1,5 @@
 .menu {
-    display: flex;
+    @include setFlex(row, center, stretch);
     position: fixed;
     top: 0;
     left: 0;
@@ -18,8 +18,7 @@
 
     &__mid-col {
         width: 75%;
-        display: flex;
-        justify-content: space-between;
+        @include setFlex(row, space-between, center);
     }
 
     &__right-col {
@@ -28,12 +27,10 @@
 }
 
 .left-part-menu {
-    display: flex;
-    justify-content: space-around;
+    @include setFlex(row, space-around, center);
 
     &__logo {
-        display: flex;
-        align-items: center;
+         @include setFlex(row, center, center);
     }
 
     &__button {
@@ -41,15 +38,14 @@
     }
 
     &__subpages-wrap {
-        @include flexCenter;
+        @include setFlex(row, center, center);
         color: #5d5d5d;
     }
 
     &__subpage {
-        display: flex;
+        @include setFlex(row, center, center);
         width: 50%;
         padding: $space-small $space-large;
-        align-items: center;
         margin: 0 $space-standard;
         text-align: center;
         font: $font-menu-small;
@@ -74,10 +70,8 @@
 }
 
 .right-part-menu {
-    display: flex;
-    align-items: center;
+    @include setFlex(row, space-between, center);
     min-width: 12rem;
-    justify-content: space-between;
 
     &__item {
         margin: 0 $space-standard;
@@ -116,12 +110,11 @@
         }
 
         &__mid-col {
-            justify-content: flex-end;
+            @include setFlex(row, flex-end, center);
             position: relative;
 
             &--clicked {
-                flex-direction: column;
-                justify-content: space-evenly;
+                @include setFlex(column, space-evenly, stretch);
             }
         }
     }
@@ -134,7 +127,6 @@
         height: 100%;
 
         &--clicked {
-            justify-content: center;
             position: static;
             width: 100%;
             height: 50%;
@@ -146,7 +138,7 @@
         }
 
         &__button {
-            @include flexCenter;
+            @include setFlex(row, center, center);
             position: absolute;
             top:0.5rem;
             left:0;
@@ -164,14 +156,12 @@
             display: none;
 
             &--clicked {
-                display: flex;
+                @include setFlex(row, center, stretch);
             }
         }
 
         &__subpage {
-            display: flex;
             padding: $space-small $space-x-small;
-            align-items: center;
             margin: 0 $space-small;
             text-align: center;
             font: $font-menu-small;

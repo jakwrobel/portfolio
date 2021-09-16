@@ -1,6 +1,5 @@
 .projects {
-    display: flex;
-    flex-flow: column nowrap;
+    @include setFlex(column, flex-start, stretch);
     height: 110vh;
     background-color: $c-wild-sand;
 
@@ -11,17 +10,14 @@
     }
 
     &__stripe-wrap {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-start;
+        @include setFlex(column, center, flex-start);
         height: 20%;
         min-height: 4rem;
         margin-top: 4rem;
     }
 
     &__stripe {
-        @include flexCenter;
+        @include setFlex(row, center, center);
         width: 40%;
         height: 60%;
         background-color: $c-deepBlush;
@@ -55,18 +51,16 @@
 }
 
 .content {
-    display: flex;
+    @include setFlex(row, flex-start, stretch);
     height: 80%;
 
     &__left-col {
-        display: flex;
-        flex-flow: column nowrap;
+        @include setFlex(column, flex-start, stretch);
         width: 12.5%;
     }
 
     &__mid-col {
-        display: flex;
-        flex-flow: column nowrap;
+        @include setFlex(row, flex-start, stretch);
         width: 75%;
         box-sizing: border-box;
     }
@@ -76,38 +70,8 @@
         box-sizing: border-box;
     }
 
-    &__buttons-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 17%;
-        padding-left: 8%;
-        padding-right: 8%;
-    }
-
-    &__button {
-        @include flexCenter;
-        width: 15%;
-        height: 35%;
-        @include borderRadius(15%, 50%);
-        font-weight: 600;
-        color: $c-scorpion;
-        text-align: center;
-
-        &:hover {
-            cursor: pointer;
-            background-color: $c-deepBlush;
-            color: $c-white;
-            transition: 0.5s background-color linear;
-        }
-    }
-
     &__imgs-wrap {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: space-between;
-        row-gap: 0.5rem;
+        @include setFlex(row, space-between, space-between, wrap);
         height: 83%;
         margin-bottom: 0.5rem;
     }
@@ -115,9 +79,9 @@
 
 .image {
     position: relative;
-    width: 30%;
+    width: 29%;
     height: 50%;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     border-radius: 1rem;
 
     >img {
@@ -128,12 +92,9 @@
     }
 
     &__overlay {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
+        @include setFlex(column, space-around, center);
         padding-bottom: 10%;
         box-sizing: border-box;
-        align-items: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -150,9 +111,7 @@
         }
 
         a {
-            display: flex;
-            justify-content: center;
-            align-items:center;
+            @include setFlex(row, center, center);
             text-decoration: none;
             width: 40%;
             height: 100%;
@@ -168,15 +127,13 @@
         &:hover {
             transition: 1s all linear;
             background: linear-gradient(120deg, rgba(230, 112, 149, 0.8) 65%, rgba(230, 112, 149, 0.5) 0%);
-            cursor: pointer;
 
             .image__tittle-wrap {
-                transition: 1s all linear;
+                transition: 1.2s all linear;
                 color: $c-white;
             }
 
             a {
-                // transition: 0.2s all linear;
                 color: $c-white;
                 border-color: $c-white;
 
@@ -196,9 +153,7 @@
     }
 
     &__buttons-wrap{
-            display: flex;
-            justify-content: space-around;
-            align-items:center;
+        @include setFlex(row, space-around, center);
             width: 100%;
             height:20%;
         }
@@ -222,6 +177,13 @@ svg {
     }
 }
 
+@media only screen and (max-width: 1024px){
+        .image__overlay a{
+            height: 70%;
+            min-height: 2.5rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         &__left-col {
@@ -235,6 +197,11 @@ svg {
         &__right-col {
             width: 0;
         }
+    }
+
+    .image__overlay a{
+            height: 50%;
+            min-height: 2.5rem;
     }
 }
 
@@ -255,17 +222,6 @@ svg {
     }
 
     .content {
-        &__buttons-wrap {
-            flex-flow: row wrap;
-            justify-content: center;
-            padding-right: 0;
-            padding-left: 0;
-        }
-
-        &__button {
-            width: 25%;
-        }
-
         &__imgs-wrap {
             justify-content: space-around;
         }

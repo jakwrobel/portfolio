@@ -1,12 +1,9 @@
 .footer{
+	@include setFlex(column, space-between, center);
 	position: fixed;
 	bottom: 0;
 	left:0;
 	right:0;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-	align-items: center;
 	height: 25vh;
 	min-height: 12.8rem;
 	background-color: $c-bastille;
@@ -38,14 +35,13 @@
 }
 }
 &__icons-wrap{
-	display: flex;
-	justify-content: space-between;
+	@include setFlex(row, space-between, stretch);
 	width: 15%;
 	min-width: 9.5rem;
 }
 
 &__icon{
-	@include flexCenter;
+	@include setFlex(row, center, center);
 	width: 3rem;
 	height: 3rem;
 	min-width: 25px;
@@ -62,9 +58,7 @@
 }
 
 &__sign-wrap{
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+	@include setFlex(column, flex-start, center);
 	padding-bottom: $space-small;
 }
 
