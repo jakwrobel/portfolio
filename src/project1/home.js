@@ -58,7 +58,7 @@ const Home = () => {
             </div>
             <div className="home__mid-col">
                 <div className="mid-header">
-                    <div className="mid-header__left-part">
+                    <section className="mid-header__left-part">
                         <div className="mid-header__background-inscription">I'm
                         </div>
                         <h1><span className="mid-header__title-wrap">Front-end developer <span>&</span> Programmer</span></h1>
@@ -67,7 +67,7 @@ const Home = () => {
                             <a href='' className='mid-header__button'>Moje projekty</a>
                             <a href='' className='mid-header__button'>Wiecej o mnie</a>
                         </div>
-                    </div>
+                    </section>
                     <div className="mid-header__right-part">
                         <div className="mid-header__stripe">
                             <div className='mid-header__stripe-overlay'>

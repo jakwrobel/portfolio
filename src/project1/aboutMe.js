@@ -98,22 +98,22 @@ useEffect(()=>{
                         <div className="window__content">
                             <h2><span className="grey">&#47; &#47;</span> About</h2>
                             <div className="window__description">
-                                <div className="window__me-skills">
+                                <main className="window__me-skills">
                                     <h3><span className="grey">&lt;/</span>Me<span className="grey">&gt;</span></h3>
                                     <h3><span className="grey">&#123;</span></h3>
-                                    <div className="window__text">
+                                    <article className="window__text">
                                         <span className="grey">"</span>Nazywam się Jakub Wróbel. Jestem absolwentem geoinformacji inżynierskiej na Uniwersytecie Adama Mickiewicza w Poznaniu.
                                         Po studiach rozpocząłem samodzielną naukę programowania w językach front-endowych, a niedawno uzupełniłem ją uczestnicząc w kursie programowania "easycode".
                                         <span className="grey">"</span>
-                                    </div>
-                                    <div className="window__text">
+                                    </article>
+                                    <article className="window__text">
                                         <span className="grey">"</span>Nauczyłem się tworzyć strony wykorzystując
                                         HTML, CSS, SCSS, JavaScript i React. Chcę cały czas poszerzać swoją wiedzę, ucząc się nowych języków i stawać się bieglejszy w stosowaniu tych już poznanych.
                                         Obecnie szukam swojej pierwszej
                                         pracy związanej z front-endem.<span className="grey">"</span>
-                                    </div>
+                                    </article>
                                     <h3><span className="grey">&#125;</span></h3>
-                                </div>
+                                </main>
                                 <div className="window__me-skills">
                                     <h3><span className="grey">&lt;/</span>Skills<span className="grey">&gt;</span></h3>
                                     <div className="window__skills-wrap">
