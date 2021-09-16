@@ -28,11 +28,12 @@ const triggerMenu = ()=>{
     }
 }
 
-	return(
-		<div className='menu'>
+return(
+	<header className='menu'>
         <div className='menu__left-col'>
         </div>
-        <div className='menu__mid-col'>
+
+        <menu className='menu__mid-col'>
             <div className='left-part-menu'>
                 <div className="left-part-menu__button" onClick={triggerMenu}>|||</div>
                 <div className='left-part-menu__logo'>
@@ -55,10 +56,10 @@ const triggerMenu = ()=>{
                     <img src="./images/menu_linkedin.png" alt="linkedin icon"/>
                 </a>
             </div>
-        </div>
+        </menu>
         <div className='menu__right-col'>
         </div>
-    </div>
+    </header>
     )
 }
 
