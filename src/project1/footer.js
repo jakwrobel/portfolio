@@ -40,9 +40,9 @@ return (
                 <div className="footer__logo">
                     <img src="./images/footer_logo.png" alt="logo"/> 
                 </div>
-                <div className="footer__sign">
+                <footer className="footer__sign">
                     <h3>JAKUB WRÓBEL 2021</h3>
-                </div>
+                </footer>
             </div>
         </div>
 )
