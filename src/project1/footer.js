@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react'
-// import './footer-styles.css'
 
 const Footer = () => {
     const [state, changeState] = useState(500);
@@ -30,18 +29,19 @@ return (
                 </div>
             </div>
             <div className="footer__icons-wrap">
-                <div className="footer__icon"><img src="./images/footer_facebook.png" alt=" facebook icon"/>
-                </div>
-                <div className="footer__icon"><img src="./images/footer_instagram.png" alt="instagram icon"/>
-                </div>
-                <div className="footer__icon"><img src="./images/footer_linkedin.png" alt="linkedin icon"/>
-                </div>
+                <a href="https://www.facebook.com/kuba.wrobel.1" className="footer__icon"><img src="./images/footer_facebook.png" alt=" facebook icon"/>
+                </a>
+                <a className="footer__icon"><img src="./images/footer_instagram.png" alt="instagram icon"/>
+                </a>
+                <a href="https://www.linkedin.com/in/jakub-wr%C3%B3bel-731931201/" className="footer__icon"><img src="./images/footer_linkedin.png" alt="linkedin icon"/>
+                </a>
             </div>
             <div className="footer__sign-wrap">
                 <div className="footer__logo">
-                    <img src="./images/footer_logo.png" alt="logo"/> </div>
+                    <img src="./images/footer_logo.png" alt="logo"/> 
+                </div>
                 <div className="footer__sign">
-                    <h3>JAN KOWALSKI 2021</h3>
+                    <h3>JAKUB WRÓBEL 2021</h3>
                 </div>
             </div>
         </div>
