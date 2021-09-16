@@ -1,7 +1,8 @@
-@mixin flexCenter{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+@mixin setFlex($direction,$justify,$align, $wrap:nowrap){
+	display:flex;
+	flex-flow: $direction $wrap;
+	justify-content:$justify;
+	align-items:$align;
 }
 
 @mixin borderRadius($first, $second){
@@ -19,13 +20,3 @@
 		}
 	}
 }
-
-// @mixin menuColors($colors){
-// 	@each $id, $color in $colors{
-// 		&--#{$id} a{
-// 			@extend .left-part-menu__subpage;
-// 			color: $color;
-// 			text-decoration: none;
-// 		}
-// 	}
-// }

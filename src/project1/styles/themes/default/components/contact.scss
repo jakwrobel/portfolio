@@ -20,7 +20,7 @@ input:focus{
 }
 
 input[type="submit"]{
-	@include flexCenter;
+	@include setFlex(row, center, center);
 	align-self: center;
 	width: 40%;
 	height: 15%;
@@ -57,17 +57,13 @@ textarea{
 }
 
 .contact{
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-	align-items: center;
+	@include setFlex(column, space-between, center);
 	position: relative;
 	height: 60vh;
 	background-color: $c-baltic-sea;
 
 	> form{
-	display: flex;
-	flex-flow: column nowrap;
+	@include setFlex(column, flex-start, stretch);
 	width: 25%;
 	height: 75%;
 	min-width: 17rem;

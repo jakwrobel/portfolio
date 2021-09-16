@@ -6,19 +6,19 @@ const Projects= ()=>{
     {name:"Portfolio",
      technology:"React / JSX / SCSS",
      imageUrl:"./images/project_portfolio.webp",
-    viewUrl:"http://www.jwrobel.pl",
-    codeUrl:"http://www.jwrobel.pl"},
+    viewUrl:"https://jakwrobel.github.io/portfolio/",
+    codeUrl:"https://github.com/jakwrobel/portfolio"},
     {name:"Quizz App",
      technology:"React / JSX / SCSS",
      imageUrl:"./images/project_quiz.webp",
- viewUrl:"http://www.jwrobel.pl",
-    codeUrl:"http://www.jwrobel.pl"},
+ viewUrl:"https://jakwrobel.github.io/QuizzApp/",
+    codeUrl:"https://github.com/jakwrobel/QuizzApp"},
      {name:"Project 3",
      technology:"W trakcie przygotowań",
-     imageUrl:"./images/project_quiz.webp"},
+     imageUrl:"./images/project_3.webp"},
      {name:"Project 4",
      technology:"W trakcie przygotowań",
-     imageUrl:"./images/project_quiz.webp"},
+     imageUrl:"./images/project_4.webp"},
 ])
     
 	return(
@@ -33,20 +33,6 @@ const Projects= ()=>{
                 <div className="content__left-col">
                 </div>
                 <div className="content__mid-col">
-                 {/*   <div className="content__buttons-wrap">
-                        <div className="content__button">HTML
-                        </div>
-                        <div className="content__button">CSS
-                        </div>
-                        <div className="content__button">JAVA SCRIPT
-                        </div>
-                        <div className="content__button">REACT
-                        </div>
-                        <div className="content__button">LOREM
-                        </div>
-                        <div className="content__button">IPSUM
-                        </div>
-                    </div>*/}
                     <div className="content__imgs-wrap">
                         {projects.map(project=>(<Project name={project.name} technology={project.technology} imgUrl={project.imageUrl} viewUrl={project.viewUrl} codeUrl={project.codeUrl}/>))}
                     </div>
