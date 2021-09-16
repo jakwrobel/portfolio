@@ -74,10 +74,10 @@ const Project = ({imgUrl, name, technology, viewUrl, codeUrl})=>{
     return(
         <div className="image"><img src={imgUrl} alt={name}/>
                             <div className="image__overlay">
-                                <div className="image__tittle-wrap">
+                                <section className="image__tittle-wrap">
                                     <h2>{name}</h2>
                                     <h3>{technology}</h3>
-                                </div>
+                                </section>
                                 <div className="image__buttons-wrap">
                                 <a href={viewUrl}>
                                 View
