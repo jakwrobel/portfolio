@@ -75,6 +75,12 @@
     }
 }
 
+@media only screen and (max-height: 590px){
+	.footer__arrow-circle{
+		top: -15%;
+	}
+}
+
 @media only screen and (max-height: 380px){
 	.footer{
 		display: none;

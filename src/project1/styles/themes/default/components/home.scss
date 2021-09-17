@@ -63,14 +63,14 @@
         position: relative;
         width: 50%;
         min-width: 31rem;
-        font-family: 'Lato', sans-serif;
         color: $c-tuna;
+        font-weight: 600;
 
         >h1 {
             position: relative;
             margin-bottom: $space-small;
             font-size: 2rem;
-            font-weight: 100;
+
 
             >span {
                 color: $c-deepBlush;
@@ -81,10 +81,10 @@
             margin-top: 0;
             font-size: 3.2rem;
 
+
             &:first-letter {
-                vertical-align: middle;
+                vertical-align: sub;
                 font-size: 4.6rem;
-                font-weight: 300;
             }
         }
     }
