@@ -74,3 +74,9 @@
         width: 25%;
     }
 }
+
+@media only screen and (max-height: 380px){
+	.footer{
+		display: none;
+	}
+}
