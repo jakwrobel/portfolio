@@ -111,3 +111,12 @@ textarea{
         width: 35%;
     }
 }
+
+
+@media only screen and (max-height: 380px){
+	.contact{
+		bottom: 6rem;
+   		 width: 100%;
+   		 position: absolute;
+	}
+}
