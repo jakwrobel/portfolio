@@ -9,7 +9,7 @@ const Contact= ()=>{
     	 </div>
     <div className="contact__wrap">
         <div className="contact">
-            <form>
+            <form action="mailto:kubus_96-1996@tlen.pl">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name"/>
                 <label for="e-mail">Email:</label>
