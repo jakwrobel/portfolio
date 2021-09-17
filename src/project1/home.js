@@ -3,17 +3,29 @@ import AboutMe from './aboutMe'
 
 const Home = () => {
 
-    function setCoordinates(el, title, parent) {
-        el.style.left = (title.getBoundingClientRect().left - parent.getBoundingClientRect().left) + 'px'
-        el.style.top = (title.getBoundingClientRect().top - parent.getBoundingClientRect().top - 0.8 * el.clientHeight) + 'px'
+    const setCoordinates = (element, title, parent, value)=>{
+        element.style.left = (title.getBoundingClientRect().left - parent.getBoundingClientRect().left) + 'px'
+        element.style.top = (title.getBoundingClientRect().top - parent.getBoundingClientRect().top - value * element.clientHeight) + 'px'
+    }
+
+    function detectSize(element, title, parent) {
+        if(window.innerWidth>768){
+        setCoordinates(element, title, parent, 0.7)
+        }
+        else if ((window.innerWidth<768) && (window.innerWidth>480)){
+       setCoordinates(element, title, parent, 0.8)
+        }
+        else if (window.innerWidth<480){
+        setCoordinates(element, title, parent, 0.6)
+        }
     }
 
     useEffect(() => {
         let title = document.querySelector('.mid-header__title-wrap')
         let parent = document.querySelector('.mid-header__left-part')
         let element = document.querySelector('.mid-header__background-inscription')
-        window.addEventListener('load', () => setCoordinates(element, title, parent))
-        window.addEventListener('resize', () => setCoordinates(element, title, parent))
+        window.addEventListener('load', () => detectSize(element, title, parent))
+        window.addEventListener('resize', () => detectSize(element, title, parent))
     })
 
     function accordionStripe(el, value, newClassName) {
