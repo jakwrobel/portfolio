@@ -102,15 +102,13 @@ useEffect(()=>{
                                     <h3><span className="grey">&lt;/</span>Me<span className="grey">&gt;</span></h3>
                                     <h3><span className="grey">&#123;</span></h3>
                                     <article className="window__text">
-                                        <span className="grey">"</span>Nazywam się Jakub Wróbel. Jestem absolwentem geoinformacji inżynierskiej na Uniwersytecie Adama Mickiewicza w Poznaniu.
-                                        Po studiach rozpocząłem samodzielną naukę programowania w językach front-endowych, a niedawno uzupełniłem ją uczestnicząc w kursie programowania "easycode".
+                                        <span className="grey">"</span>My name is Jakub Wróbel. I am bachelor of engineering in Geoinfomration on Adam Michkiewicz University in Poznań.
+                                        After finishing my studies, I started learning front-end languages by myself. Few months ago I joined "EasyCode" programming course to improve my knowledge.
                                         <span className="grey">"</span>
                                     </article>
                                     <article className="window__text">
-                                        <span className="grey">"</span>Nauczyłem się tworzyć strony wykorzystując
-                                        HTML, CSS, SCSS, JavaScript i React. Chcę cały czas poszerzać swoją wiedzę, ucząc się nowych języków i stawać się bieglejszy w stosowaniu tych już poznanych.
-                                        Obecnie szukam swojej pierwszej
-                                        pracy związanej z front-endem.<span className="grey">"</span>
+                                        <span className="grey">"</span>I've already learned HTML, CSS, SCSS, JavaScript i React. Currently I am looking for my first font-end job, in which I could develop my programming skills
+                                        <span className="grey">"</span>
                                     </article>
                                     <h3><span className="grey">&#125;</span></h3>
                                 </main>

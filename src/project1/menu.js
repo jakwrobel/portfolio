@@ -40,9 +40,9 @@ return(
                     <img src="./images/menu_logo.png" alt="site logo"/>
                 </div>
                 <div className='left-part-menu__subpages-wrap'>
-                    <div className='left-part-menu__subpage'><a href="#projects">Projekty</a></div>
-                    <div className='left-part-menu__subpage'><a href="#about-me">O mnie</a></div>
-                    <div className='left-part-menu__subpage'><a href="#contact">Kontakt</a></div>
+                    <div className='left-part-menu__subpage'><a href="#projects">Projects</a></div>
+                    <div className='left-part-menu__subpage'><a href="#about-me">About me</a></div>
+                    <div className='left-part-menu__subpage'><a href="#contact">Contact</a></div>
                 </div>
             </div>
             <div className='right-part-menu'>

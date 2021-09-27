@@ -76,8 +76,8 @@ const Home = () => {
                         <h1><span className="mid-header__title-wrap">Front-end developer <span>&</span> Programmer</span></h1>
                         <h2>JAKUB WRÓBEL</h2>
                         <div className="mid-header__buttons-wrap">
-                            <a href="#projects" className='mid-header__button'>Moje projekty</a>
-                            <a href="#about-me" className='mid-header__button'>Wiecej o mnie</a>
+                            <a href="#projects" className='mid-header__button'>My projects</a>
+                            <a href="#about-me" className='mid-header__button'>More about me</a>
                         </div>
                     </section>
                     <div className="mid-header__right-part">

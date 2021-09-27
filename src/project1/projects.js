@@ -14,10 +14,10 @@ const Projects= ()=>{
  viewUrl:"https://jakwrobel.github.io/QuizzApp/",
     codeUrl:"https://github.com/jakwrobel/QuizzApp"},
      {name:"Project 3",
-     technology:"W trakcie przygotowań",
+     technology:"Not ready",
      imageUrl:"./images/project_3.webp"},
      {name:"Project 4",
-     technology:"W trakcie przygotowań",
+     technology:"Not ready",
      imageUrl:"./images/project_4.webp"},
 ])
     
