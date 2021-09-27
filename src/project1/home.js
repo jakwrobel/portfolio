@@ -61,11 +61,11 @@ const Home = () => {
     return (
         <div className="home__underlay">
         <div className="home">
-            <img src="./portfolio/images/home_zygzak1.png" alt="background image" alt="background picture"/>
-            <img src="./portfolio/images/home_zygzak2.png" alt="background image" alt="background picture"/>
-            <img src="./portfolio/images/home_zygzak3.png" alt="background image" alt="background picture"/>
-            <img src="./portfolio/images/home_zygzak4.png" alt="background image" alt="background picture"/>
-            <img src="./portfolio/images/home_zygzak5.png" alt="background image" alt="background picture"/>
+            <img src="images/home_zygzak1.png" alt="background image" alt="background picture"/>
+            <img src="images/home_zygzak2.png" alt="background image" alt="background picture"/>
+            <img src="images/home_zygzak3.png" alt="background image" alt="background picture"/>
+            <img src="images/home_zygzak4.png" alt="background image" alt="background picture"/>
+            <img src="images/home_zygzak5.png" alt="background image" alt="background picture"/>
             <div className="home__left-col">
             </div>
             <div className="home__mid-col">
