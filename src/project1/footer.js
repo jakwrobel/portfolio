@@ -6,6 +6,7 @@ const Footer = () => {
     const interRef=useRef()
 
 
+    //Function scrolls up the window when button is clicked
     function handleClick(){
     if(window.document.documentElement.scrollTop > 0){
         interRef.current = setInterval(()=>{

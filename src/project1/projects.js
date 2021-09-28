@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 
 const Projects= ()=>{
 
+//State is array of objects. Each one includes: project name, technology, url of proj photo, urls of code and live version
     const [projects, setProjects]=useState([
     {name:"Portfolio",
      technology:"React / JSX / SCSS",
@@ -70,6 +71,7 @@ const Projects= ()=>{
     </div>)
 }
 
+//This component displays project section. Each component is for only one project
 const Project = ({imgUrl, name, technology, viewUrl, codeUrl})=>{
     return(
         <div className="image"><img src={imgUrl} alt={name}/>

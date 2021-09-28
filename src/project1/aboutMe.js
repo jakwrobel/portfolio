@@ -3,6 +3,7 @@ import React,{useState, useEffect} from 'react'
 
 const AboutMe=()=>{
 
+    //State stores actual skiils and percentage level of particular skill
     const [skills,changeSkills]=useState([
         {name:"HTML",
          level: "100%",
@@ -21,7 +22,8 @@ const AboutMe=()=>{
          order: "fifth"}
         ])
     
-
+    //Function makes window comming from down, when page is scrolled to certain value and makes it hiding back when page
+    //is scrolled to certain value
     function moveWindow(value,topPos,movableWindow){
  if(document.documentElement.querySelector('.home').offsetWidth>768){
         value=0.09;
@@ -59,6 +61,7 @@ useEffect(()=>{
     )
 },[])
 
+    //Function keeps lights on topbar of window being circular. Prevents size changing while resizing the window
 function changeDimension(element) {
     if (document.querySelector('.window__lights-wrap').clientWidth * 0.2 > document.querySelector('.window__lights-wrap').clientHeight * 0.5) {
         for (let i = 0; i < element.length; i++) {

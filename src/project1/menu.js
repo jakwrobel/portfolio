@@ -2,8 +2,11 @@ import React, {useState} from 'react'
 
 const Menu= ()=>{
 
+    //State tells if mobile version of menu is displayed
     const [isTriggered, changeMenu] = useState(false)
 
+
+    //This function is triggered when hamburger has been clicked. Function adds or removes styles of mobile version of menu
 const triggerMenu = ()=>{
     let menu = document.querySelector('.menu')
     let menuMidCol = document.querySelector('.menu__mid-col')
