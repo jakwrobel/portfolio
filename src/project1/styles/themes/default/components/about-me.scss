@@ -105,9 +105,9 @@
     }
 
     &__text {
-        margin: $space-standard $space-standard $space-standard $space-x-large;
+        margin: $space-x-large $space-standard $space-x-large $space-x-large;
         font-family: monospace;
-        font-size: 1.3rem;
+        font-size: 2rem;
         padding-left: $space-large;
         border-left: 1px solid $c-iron;
         box-sizing: border-box;
@@ -166,6 +166,16 @@
     color: $c-scorpion;
 }
 
+@media only screen and (max-width: 1024px) {
+
+    .window{
+        &__text {
+            margin: $space-large $space-standard $space-large $space-x-large;
+            font-size: 1.6rem;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     .mid-me {
@@ -179,6 +189,11 @@
 
         &__skill-line{
             height: 10%;
+        }
+
+        &__text {
+            margin: $space-standard $space-standard $space-standard $space-x-large;
+            font-size: 1.5rem;
         }
     }
 }
@@ -222,6 +237,11 @@
         &__description {
             @include setFlex(column, flex-start, stretch);
             height: 100%;
+        }
+
+        &__text {
+            font-family: monospace;
+            font-size: 1.3rem;
         }
 
         &__skills-wrap{

@@ -1,0 +1,18 @@
+export const initialProjects = [
+    {name:"Portfolio",
+     technology:"React / JSX / SCSS",
+     imageUrl:"./images/project_portfolio.webp",
+    viewUrl:"https://jakwrobel.github.io/portfolio/",
+    codeUrl:"https://github.com/jakwrobel/portfolio"},
+    {name:"Quizz App",
+     technology:"React / JSX / SCSS",
+     imageUrl:"./images/project_quiz.webp",
+ viewUrl:"https://jakwrobel.github.io/QuizzApp/",
+    codeUrl:"https://github.com/jakwrobel/QuizzApp"},
+     {name:"Project 3",
+     technology:"Not ready",
+     imageUrl:"./images/project_3.webp"},
+     {name:"Project 4",
+     technology:"Not ready",
+     imageUrl:"./images/project_4.webp"},
+]
