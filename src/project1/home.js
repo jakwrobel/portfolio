@@ -33,27 +33,22 @@ const Home = () => {
       <div className="home">
         <img
           src="images/home_zygzak1.png"
-          alt="background image"
           alt="background picture"
         />
         <img
           src="images/home_zygzak2.png"
-          alt="background image"
           alt="background picture"
         />
         <img
           src="images/home_zygzak3.png"
-          alt="background image"
           alt="background picture"
         />
         <img
           src="images/home_zygzak4.png"
-          alt="background image"
           alt="background picture"
         />
         <img
           src="images/home_zygzak5.png"
-          alt="background image"
           alt="background picture"
         />
         <div className="home__left-col"></div>
@@ -94,8 +89,7 @@ const Home = () => {
                 <div className="mid-header__stripe-circle"></div>
                 <img
                   src="./images/ja.jpg"
-                  alt="Jakub Wróbel"
-                  alt="Photo of Jakub Wróbel"
+                  alt="Jakub Wróbel photo"
                 />
               </div>
             </div>
