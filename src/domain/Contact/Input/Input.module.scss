@@ -1,0 +1,40 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.input {
+  &--contact {
+    height: 2rem;
+    margin-top: $space-small;
+    margin-bottom: $space-standard;
+    background-color: $c-white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+
+    &:focus {
+      transition: 0.2s background-color linear;
+      background-color: $c-deepBlush;
+      color: $c-white;
+    }
+  }
+
+  &--submit {
+    @include setFlex(row, center, center);
+    align-self: center;
+    width: 40%;
+    height: 15%;
+    margin-top: $space-x-large;
+    background-color: transparent;
+    color: $c-white;
+    font-weight: 600;
+    border: 1px solid $c-deepBlush;
+    @include borderRadius(20%, 50%);
+
+    &:hover {
+      transition: 0.2s all linear;
+      cursor: pointer;
+      background-color: $c-deepBlush;
+      transform: scale(1.1);
+    }
+  }
+}

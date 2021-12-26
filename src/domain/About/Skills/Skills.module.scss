@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.skills {
+  &__wrap {
+    @include setFlex(column, flex-start, stretch);
+    height: 70%;
+    width: 50%;
+    margin-left: 7%;
+    border-left: 1px solid $c-iron;
+    box-sizing: border-box;
+  }
+
+  &__barsWrap {
+    @include setFlex(column, space-around, stretch);
+    height: calc(90% - 4.1rem);
+    width: 90%;
+    padding-left: 8%;
+    border-left: 1px solid $c-iron;
+    box-sizing: border-box;
+  }
+}

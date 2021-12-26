@@ -1,0 +1,43 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+.h2 {
+  &--showcase {
+    margin-top: 0;
+    font-size: 3.2rem;
+
+    &:first-letter {
+      vertical-align: sub;
+      font-size: 4.6rem;
+    }
+  }
+
+  &--about {
+    margin-top: $space-large;
+    margin-left: 5%;
+    font-size: 3rem;
+
+    &::before {
+      content: "/ / ";
+      color: grey;
+    }
+  }
+
+  &--projects {
+    @extend .h2--about;
+    color: white;
+  }
+
+  &--project {
+    font-size: 1.8rem;
+  }
+
+  &--contact {
+    display: inline;
+    margin: 0;
+
+    &::before {
+      content: "/ / ";
+      color: grey;
+    }
+  }
+}

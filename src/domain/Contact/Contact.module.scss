@@ -1,0 +1,24 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+.contact {
+  &__wrap {
+    @include setFlex(column, flex-start, center);
+    background-color: $c-baltic-sea;
+    position: fixed;
+	bottom: 0;
+	left:0;
+	right:0;
+	height: 77vh;
+	min-height: 42.8rem;
+	z-index: 1;
+  }
+
+  &__form {
+    @include setFlex(column, flex-start, stretch);
+    width: 25%;
+    height: 75%;
+    min-width: 17rem;
+    min-height: 30rem;
+    margin-top: $space-small;
+  }
+}

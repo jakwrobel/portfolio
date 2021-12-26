@@ -1,0 +1,12 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.description {
+  &__wrap {
+    @include setFlex(column, flex-start, stretch);
+    height: 70%;
+    width: 50%;
+    margin-left: 7%;
+    border-left: 1px solid $c-iron;
+    box-sizing: border-box;
+  }
+}

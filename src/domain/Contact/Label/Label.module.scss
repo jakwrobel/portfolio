@@ -1,0 +1,7 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.label {
+  font-size: 1.5rem;
+  margin-left: $space-standard;
+  color: $c-white;
+}

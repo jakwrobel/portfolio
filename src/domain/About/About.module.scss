@@ -1,0 +1,59 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+.wrap {
+  @include setFlex(row, center, stretch);
+  height: 112.5vh;
+  background-color: white;
+  clip-path: ellipse(100% 60% at 50% 40%);
+}
+
+.underlay {
+  position: relative;
+  z-index: 2;
+  background-color: $c-white-sand;
+}
+
+.leftCol {
+  width: 12.5%;
+}
+
+.midCol {
+  @include setFlex(column, flex-end, stretch);
+  width: 75%;
+}
+
+.rightCol {
+  width: 12.5%;
+}
+
+.window {
+  @include setFlex(column, flex-start, stretch);
+  position: relative;
+  // top: 66vh;
+  transition: 1s all linear;
+  height: 80%;
+  min-height: 41rem;
+  background-color: $c-white;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  box-shadow: 1rem 0 2rem 1rem #f6f6f6, 0 -1rem 2rem 1rem #f6f6f6,
+    -1rem 0 2rem 1rem #f6f6f6;
+}
+
+.content {
+  @include setFlex(row, flex-start, stretch);
+  height: 92%;
+  color: #e67095;
+}
+
+@media only screen and (max-width: 48em) {
+  .wrap {
+    clip-path: ellipse(140% 60% at 50% 40%);
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .wrap {
+    clip-path: ellipse(180% 60% at 50% 40%);
+  }
+}

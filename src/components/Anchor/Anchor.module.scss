@@ -1,0 +1,99 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.anchor {
+  &--menu {
+    @include setFlex(row, center, center);
+    width: 50%;
+    padding: $space-small $space-large;
+    margin: 0 $space-standard;
+    text-align: center;
+    font: $font-menu-small;
+    white-space: nowrap;
+    @include borderRadius(30%, 50%);
+    text-decoration: none;
+    color: $c-scorpion;
+    transition: 0.3s background-color linear;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $c-deepBlush;
+      color: $c-white;
+    }
+  }
+
+  &--icon {
+    @include setFlex(row, center, center);
+    margin: 0 $space-standard;
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s all linear;
+      transform: scale(1.2);
+    }
+  }
+
+  &--showcase {
+    @include setFlex(row, center, center);
+    width: 30%;
+    min-width: 11rem;
+    text-decoration: none;
+    color: $c-deepBlush;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    @include borderRadius(10%, 50%);
+
+    &:hover {
+      background-color: $c-deepBlush;
+      box-sizing: border-box;
+      color: $c-white;
+      transition: 0.3s all linear;
+    }
+
+    &:first-child {
+      border: 1px solid $c-deepBlush;
+      @include borderRadius(10%, 50%);
+      box-sizing: border-box;
+      font-weight: 600;
+      margin-right: 10%;
+    }
+  }
+
+  &--project {
+    @include setFlex(row, center, center);
+    text-decoration: none;
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid transparent;
+    @include borderRadius(15%, 50%);
+
+    &:hover {
+      transition: 0.2s transform linear;
+      transform: scale(1.1);
+      border: 3px solid $c-white;
+      cursor: pointer;
+    }
+  }
+
+  &--footer {
+    @include setFlex(row, center, center);
+    width: 3rem;
+    height: 3rem;
+    min-width: 25px;
+    min-height: 25px;
+    background-color: $c-tuna;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s all linear;
+      background-color: $c-deepBlush;
+      transform: scale(1.1);
+    }
+  }
+}

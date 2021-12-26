@@ -1,0 +1,22 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.light {
+  width: 20%;
+  height: 50%;
+  border-radius: 50%;
+
+  &--red {
+    @extend .light;
+    background-color: $c-red-ribon;
+  }
+
+  &--yellow {
+    @extend .light;
+    background-color: $c-pear;
+  }
+
+  &--green {
+    @extend .light;
+    background-color: $c-olive-drab;
+  }
+}

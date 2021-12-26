@@ -1,0 +1,18 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.textarea {
+  height: 20%;
+  margin-top: $space-small;
+  margin-bottom: $space-standard;
+  resize: none;
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+  min-height: 5.6rem;
+
+  &:focus {
+    transition: 0.2s background-color linear;
+    color: $c-white;
+    background-color: $c-deepBlush;
+  }
+}

@@ -1,0 +1,19 @@
+.button {
+  &--showcase {
+    @include setFlex(row, center, center);
+    width: 30%;
+    min-width: 11rem;
+    text-decoration: none;
+    color: $c-deepBlush;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    @include borderRadius(10%, 50%);
+
+    &:hover {
+      background-color: $c-deepBlush;
+      box-sizing: border-box;
+      color: $c-white;
+      transition: 0.3s all linear;
+    }
+  }
+}

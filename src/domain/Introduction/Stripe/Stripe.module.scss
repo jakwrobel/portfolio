@@ -1,0 +1,47 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.stripe {
+  position: relative;
+  height: 30rem;
+  background-color: $c-deepBlush;
+  border-top-left-radius: 15rem 15rem;
+  border-bottom-left-radius: 15rem 15rem;
+  transition: 1s all linear;
+
+  > img {
+    position: absolute;
+    top: 3.6rem;
+    left: 3.5rem;
+    width: 23rem;
+    height: 30rem;
+    object-fit: cover;
+    clip-path: circle(11.5rem at 11.5rem 11.5rem);
+  }
+
+  &__wrap {
+    @include setFlex(column, center, stretch);
+    width: 50%;
+    overflow: hidden;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 3.6rem;
+    left: 3.5rem;
+    width: 23rem;
+    height: 23rem;
+    background-color: transparent;
+    z-index: 1;
+    transform: rotate(10deg);
+  }
+
+  &__circle {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background-color: $c-white-sand;
+  }
+}

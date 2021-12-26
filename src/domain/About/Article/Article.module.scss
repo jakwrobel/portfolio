@@ -1,0 +1,22 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.article {
+  &--about {
+    margin: $space-x-large $space-standard $space-x-large $space-x-large;
+    font-family: monospace;
+    font-size: 2rem;
+    padding-left: $space-large;
+    border-left: 1px solid $c-iron;
+    box-sizing: border-box;
+
+    &::before{
+        content: open-quote" ";
+        color: grey;
+    }
+
+    &::after{
+        content: " "close-quote;
+        color: grey;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.showcase {
+  @include setFlex(column, center, stretch);
+  position: relative;
+  width: 50%;
+  min-width: 31rem;
+  color: $c-tuna;
+  font-weight: 600;
+
+  &__inscription {
+    @include setFlex(row, center, flex-end);
+    position: absolute;
+    font-size: 13rem;
+    line-height: 13rem;
+    color: $c-wild-sand;
+    z-index: -1;
+  }
+
+  &__buttonsWrap {
+    @include setFlex(row, flex-start, stretch);
+    height: 3.2rem;
+  }
+}

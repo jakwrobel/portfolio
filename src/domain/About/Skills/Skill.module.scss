@@ -1,0 +1,42 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.skill {
+  &__wrap {
+    @include setFlex(row, flex-start, stretch);
+    height: 12%;
+  }
+
+  &__bar {
+    height: 100%;
+    width: 80%;
+    background-color: $c-porcelain;
+    border-radius: 5px;
+  }
+
+  &__level {
+    @include setFlex(row, flex-start, center);
+    height: 100%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1.8rem;
+    background-color: $c-deepBlush;
+    border-radius: 5px;
+    white-space: nowrap;
+
+    @each $name, $level in $skills-level {
+      &--#{$name} {
+        @extend .skill__level;
+        width: $level * 1%;
+      }
+    }
+  }
+
+  &__number {
+    @include setFlex(row, center, center);
+    margin-left: $space-small;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $c-east-bay;
+  }
+}

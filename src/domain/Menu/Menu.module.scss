@@ -1,0 +1,48 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.menu {
+  @include setFlex(row, center, stretch);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  max-height: 8rem;
+  min-height: 3.5rem;
+  background-color: $c-white;
+  z-index: 3;
+  border-bottom: 2px solid $c-deepBlush;
+  box-sizing: border-box;
+
+  &__leftCol {
+    width: 12.5%;
+  }
+
+  &__midCol {
+    width: 75%;
+    @include setFlex(row, space-between, center);
+  }
+
+  &__rightCol {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .menu {
+    min-height: 4.8rem;
+
+    &__leftCol {
+      width: 0%;
+    }
+
+    &__midCol {
+      width: 100%;
+    }
+
+    &__rightCol {
+      width: 0%;
+    }
+  }
+}

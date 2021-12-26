@@ -1,0 +1,4 @@
+@import "../../../styles/mixins.scss";
+.navigation {
+  @include setFlex(row, space-around, center);
+}

@@ -1,0 +1,255 @@
+.projects {
+  @include setFlex(column, flex-start, stretch);
+  height: 110vh;
+  background-color: $c-wild-sand;
+
+  &__underlay {
+    position: relative;
+    background-color: $c-baltic-sea;
+    z-index: 2;
+  }
+
+  &__stripe-wrap {
+    @include setFlex(column, center, flex-start);
+    height: 20%;
+    min-height: 4rem;
+    margin-top: 4rem;
+  }
+
+  &__stripe {
+    @include setFlex(row, center, center);
+    width: 40%;
+    height: 60%;
+    background-color: $c-deepBlush;
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+
+    > h2 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 600;
+      color: $c-white;
+    }
+  }
+
+  &__svg-container {
+    position: relative;
+    width: 100%;
+    height: 13vw;
+  }
+
+  &__contact {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: $c-deepBlush;
+  }
+}
+
+.content {
+  @include setFlex(row, flex-start, stretch);
+  height: 80%;
+
+  &__left-col {
+    @include setFlex(column, flex-start, stretch);
+    width: 12.5%;
+  }
+
+  &__mid-col {
+    @include setFlex(row, flex-start, stretch);
+    width: 75%;
+    box-sizing: border-box;
+  }
+
+  &__right-col {
+    width: 12.5%;
+    box-sizing: border-box;
+  }
+
+  &__imgs-wrap {
+    @include setFlex(row, space-between, space-between, wrap);
+    height: 83%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.image {
+  position: relative;
+  width: 29%;
+  height: 50%;
+  margin: 1rem 1rem;
+  border-radius: 1rem;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  &__overlay {
+    @include setFlex(column, space-around, center);
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    a {
+      @include setFlex(row, center, center);
+      text-decoration: none;
+      width: 40%;
+      height: 100%;
+      background-color: transparent;
+      color: transparent;
+      font-size: 1.5rem;
+      font-weight: 600;
+      outline: none;
+      border: 2px solid transparent;
+      @include borderRadius(15%, 50%);
+    }
+
+    &:hover {
+      transition: 1s all linear;
+      background: linear-gradient(
+        120deg,
+        rgba(230, 112, 149, 0.8) 65%,
+        rgba(230, 112, 149, 0.5) 0%
+      );
+
+      .image__tittle-wrap {
+        transition: 1.2s all linear;
+        color: $c-white;
+      }
+
+      a {
+        color: $c-white;
+        border-color: $c-white;
+
+        &:hover {
+          transition: 0.2s transform linear;
+          transform: scale(1.1);
+          border: 3px solid $c-white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__tittle-wrap {
+    text-align: center;
+    color: transparent;
+  }
+
+  &__buttons-wrap {
+    @include setFlex(row, space-around, center);
+    width: 100%;
+    height: 20%;
+  }
+}
+
+svg {
+  &.outer-border-outside {
+    clip-path: ellipse(55% 100% at 50% 103%);
+  }
+
+  &.outer-border-inside {
+    clip-path: ellipse(calc(55% - 0.5px) calc(100% - 3px) at 50% 103%);
+  }
+
+  &.inner-border-outside {
+    clip-path: ellipse(55% 100% at 50% 120%);
+  }
+
+  &.inner-border-inside {
+    clip-path: ellipse(calc(55% - 1.5px) calc(100% - 3px) at 50% 120%);
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .image__overlay a {
+    height: 70%;
+    min-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .projects {
+    &__contact {
+      top: 20%;
+      font-size: 2.3rem;
+    }
+  }
+  .content {
+    &__left-col {
+      width: 0;
+    }
+
+    &__mid-col {
+      width: 100%;
+    }
+
+    &__right-col {
+      width: 0;
+    }
+  }
+
+  .image__overlay a {
+    height: 50%;
+    min-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .projects {
+    padding-bottom: $space-x-large;
+
+    &__contact {
+      font-size: 2.1rem;
+    }
+
+    &__stripe {
+      width: 50%;
+    }
+
+    &__svg-container {
+      position: relative;
+      width: 100%;
+      height: 20vw;
+    }
+  }
+
+  .content {
+    &__imgs-wrap {
+      justify-content: space-around;
+    }
+  }
+
+  .image {
+    width: 35%;
+
+    &__overlay {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
