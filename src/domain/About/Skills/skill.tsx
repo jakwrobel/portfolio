@@ -11,7 +11,9 @@ export const Skill = ({ name, value}:ISkillProps) => {
   return (
     <div className={styles.wrap}>
       <div className={styles.bar}>
-        <StyledLevel value={value} />
+        <StyledLevel value={value}>
+          {name}
+          </StyledLevel>
       </div>
       <div className={styles.number}>{value}</div>
     </div>
