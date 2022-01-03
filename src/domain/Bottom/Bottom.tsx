@@ -20,7 +20,7 @@ export const Bottom = () => {
           variant="footerIcon"
         />
         <Anchor
-          content={<img src="../../images/linkedin.png" alt="linkedin" />}
+          content={<img src="././images/linkedin.png" alt="linkedin" />}
           href="https://www.linkedin.com/in/jakub-wr%C3%B3bel-731931201/"
           variant="footerIcon"
         />

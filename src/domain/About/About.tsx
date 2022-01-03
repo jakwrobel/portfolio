@@ -18,9 +18,9 @@ export const About = () => {
   return (
     <div className={styles.underlay}>
       <div className={styles.wrap} id="aboutMe">
-        <img src="../../../images/zigzag3.png" alt="background" />
-        <img src="../../../images/zigzag4.png" alt="background" />
-        <img src="../../../images/zigzag5.png" alt="background" />
+        <img src="./images/zigzag3.png" alt="background" />
+        <img src="./images/zigzag4.png" alt="background" />
+        <img src="./images/zigzag5.png" alt="background" />
         <div className={styles.window}>
           <TopBar />
           <H2 content="About" variant="about" />
