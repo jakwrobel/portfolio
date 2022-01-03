@@ -3,7 +3,7 @@ import styles from "./H3.module.scss";
 
 interface IH3 {
   content: string;
-  variant: string;
+  variant: "about" | "aboutBracket" | "project" | "footer";
 }
 
 export const H3: React.FC<IH3> = ({ content, variant }) => {

@@ -1,12 +1,23 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
-.description {
-  &__wrap {
-    @include setFlex(column, flex-start, stretch);
-    height: 70%;
-    width: 50%;
-    margin-left: 7%;
-    border-left: 1px solid $c-iron;
-    box-sizing: border-box;
+.wrap {
+  @include setFlex(column, flex-start, stretch);
+  height: 70%;
+  width: 60%;
+  margin-left: 7%;
+  border-left: 2px solid #e6e7e8;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 48em) {
+  .wrap {
+    margin: 0 0 1rem 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .wrap {
+    width: calc(100% - 1rem);
   }
 }

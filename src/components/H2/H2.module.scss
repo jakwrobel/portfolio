@@ -4,6 +4,7 @@
   &--showcase {
     margin-top: 0;
     font-size: 3.2rem;
+    color: $c-secondary;
 
     &:first-letter {
       vertical-align: sub;
@@ -12,13 +13,14 @@
   }
 
   &--about {
-    margin-top: $space-large;
+    margin-top: 1.5rem;
     margin-left: 5%;
     font-size: 3rem;
+    color: $c-secondary;
 
     &::before {
       content: "/ / ";
-      color: grey;
+      color: $c-decorations;
     }
   }
 
@@ -34,10 +36,44 @@
   &--contact {
     display: inline;
     margin: 0;
+    font-size: 3.5rem;
 
     &::before {
       content: "/ / ";
-      color: grey;
+      color: $c-decorations;
+    }
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .h2 {
+    &--showcase {
+      font-size: 3.7rem;
+      text-align: center;
+
+      &:first-letter {
+        font-size: 5.3rem;
+      }
+    }
+    &--contact {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .h2 {
+    &--about {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &--project {
+      font-size: 1.4rem;
+    }
+
+    &--contact {
+      font-size: 1.5rem;
     }
   }
 }

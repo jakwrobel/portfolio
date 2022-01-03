@@ -5,17 +5,17 @@
   height: 50%;
   border-radius: 50%;
 
-  &--red {
+  &Red {
     @extend .light;
     background-color: $c-red-ribon;
   }
 
-  &--yellow {
+  &Yellow {
     @extend .light;
     background-color: $c-pear;
   }
 
-  &--green {
+  &Green {
     @extend .light;
     background-color: $c-olive-drab;
   }

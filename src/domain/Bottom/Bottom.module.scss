@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+.footer {
+  @include setFlex(column, space-between, center);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25vh;
+  min-height: 12.8rem;
+  background-color: $c-background-footer;
+  z-index: 1;
+}
+
+.iconsWrap {
+  @include setFlex(row, space-between, stretch);
+  width: 15%;
+  min-width: 12.7rem;
+}

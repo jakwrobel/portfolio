@@ -1,17 +1,24 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
-.topBar {
-  &__wrap {
-    @include setFlex(row, space-between, stretch);
-    height: 8%;
-    background-color: #e67095;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-  }
+.wrap {
+  @include setFlex(row, space-between, stretch);
+  height: 8%;
+  min-height: 6.4rem;
+  background-color: $c-primary;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
 
-  &__lightsWrap{
-    @include setFlex(row, space-between, center);
-    width: 10%;
-    margin-left: 2%;
+.lightsWrap {
+  @include setFlex(row, space-between, center);
+  width: 10%;
+  min-width: 7rem;
+  margin-left: 2%;
+}
+
+@media only screen and (max-width:30em){
+  .wrap{
+    height: 5%;
+    min-height: 4.4rem;
   }
 }

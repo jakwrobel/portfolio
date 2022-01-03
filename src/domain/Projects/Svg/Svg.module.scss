@@ -1,19 +1,26 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
-.svg{
-&__wrap {
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 13vw;
+}
+
+.contact {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: $c-primary;
+}
+
+@media only screen and (max-width: 64em) {
+  .wrap {
     position: relative;
     width: 100%;
-    height: 13vw;
+    height: 20vw;
   }
 
-  &__contact {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 2.5rem;
-    color: $c-deepBlush;
-  }
+ 
 }

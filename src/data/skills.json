@@ -1,0 +1,7 @@
+[
+  { "name": "HTML", "value": "100%" },
+  { "name": "CSS", "value": "95%" },
+  { "name": "JavaScript", "value": "90%" },
+  { "name": "SCSS", "value": "85%" },
+  { "name": "React", "value": "90%" }
+]

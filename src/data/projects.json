@@ -23,6 +23,8 @@
   {
     "name": "Project 4",
     "technology": "Not ready",
-    "imageUrl": "./images/project_4.webp"
+    "imageUrl": "./images/project_4.webp",
+    "viewUrl": "#projects",
+    "codeUrl": "#projects"
   }
 ]

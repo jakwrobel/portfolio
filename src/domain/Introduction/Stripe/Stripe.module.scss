@@ -1,11 +1,16 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
+
 .stripe {
   position: relative;
+  width: 50%;
   height: 30rem;
-  background-color: $c-deepBlush;
+  background-color: $c-primary;
+  border: 1px solid $c-secondary;
+  border-right: none;
   border-top-left-radius: 15rem 15rem;
   border-bottom-left-radius: 15rem 15rem;
+  box-sizing: border-box;
   transition: 1s all linear;
 
   > img {
@@ -17,31 +22,38 @@
     object-fit: cover;
     clip-path: circle(11.5rem at 11.5rem 11.5rem);
   }
+}
 
-  &__wrap {
-    @include setFlex(column, center, stretch);
-    width: 50%;
-    overflow: hidden;
+.overlay {
+  position: absolute;
+  top: 3.6rem;
+  left: 3.5rem;
+  width: 23rem;
+  height: 23rem;
+  background-color: transparent;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+.circle {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: $c-background2;
+}
+
+@media only screen and (max-width: 48em) {
+  .stripe {
+    width: 100%;
+    left: 100%;
   }
+}
 
-  &__overlay {
-    position: absolute;
-    top: 3.6rem;
-    left: 3.5rem;
-    width: 23rem;
-    height: 23rem;
-    background-color: transparent;
-    z-index: 1;
-    transform: rotate(10deg);
-  }
-
-  &__circle {
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-    background-color: $c-white-sand;
+@media only screen and (max-width: 30em) {
+  .stripe {
+    left: 100%;
   }
 }

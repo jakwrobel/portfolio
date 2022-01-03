@@ -1,24 +1,40 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
-.showcase {
+.wrap {
   @include setFlex(column, center, stretch);
   position: relative;
   width: 50%;
   min-width: 31rem;
-  color: $c-tuna;
+  // color: $c-tuna;
   font-weight: 600;
+}
+.inscription {
+  @include setFlex(row, center, flex-end);
+  position: absolute;
+  top: -8rem;
+  font-size: 15rem;
+  line-height: 13rem;
+  color: $c-background2;
+  z-index: -1;
+}
 
-  &__inscription {
-    @include setFlex(row, center, flex-end);
-    position: absolute;
-    font-size: 13rem;
-    line-height: 13rem;
-    color: $c-wild-sand;
-    z-index: -1;
+.buttonsWrap {
+  @include setFlex(row, flex-start, stretch);
+  height: 3.2rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .wrap {
+    @include setFlex(column, center, center);
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  &__buttonsWrap {
-    @include setFlex(row, flex-start, stretch);
-    height: 3.2rem;
+  .inscription{
+    font-size: 22.7rem;
+  }
+
+  .buttonsWrap{
+    @include setFlex(row, center, stretch);
   }
 }

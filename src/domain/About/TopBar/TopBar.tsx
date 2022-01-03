@@ -4,11 +4,11 @@ import styles from "./TopBar.module.scss";
 
 export const TopBar = () => {
   return (
-    <div className={styles.topBar__wrap}>
-      <div className={styles.topBar__lightsWrap}>
-        <Light variant="red" />
-        <Light variant="yellow" />
-        <Light variant="green" />
+    <div className={styles.wrap}>
+      <div className={styles.lightsWrap}>
+        <Light variant="Red" />
+        <Light variant="Yellow" />
+        <Light variant="Green" />
       </div>
     </div>
   );

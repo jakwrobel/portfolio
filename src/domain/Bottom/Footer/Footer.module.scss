@@ -1,12 +1,10 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
-.footer {
-  &__wrap {
-    @include setFlex(column, flex-start, center);
-    padding-bottom: $space-small;
-  }
+.wrap {
+  @include setFlex(column, flex-start, center);
+  padding-bottom: 0.5rem;
+}
 
-  &__logo{
-    @include setFlex(row, center, center);
-  }
+.logo {
+  @include setFlex(row, center, center);
 }

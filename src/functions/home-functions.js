@@ -26,7 +26,7 @@ export const detectSize = (element, title, parent) => {
 //Function makes stripe with my photo comming from right when page is scrolled down to certain value
 // and makes it hiding when page is scrolled up to certain value. It's doing it by adding or removing appropriate css class
 // Value of scrolled part of page is different on different page height (different devices)
-export const accordionStripe = (el, value, newClassName, resultStripe) => {
+export const accordionStripe = (el, newClassName, resultStripe) => {
   if (
     document.querySelector(".home").offsetHeight /
       document.documentElement.offsetHeight >

@@ -1,0 +1,15 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.h1 {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: $c-secondary;
+}
+
+@media only screen and (max-width: 48em) {
+  .h1 {
+    font-size: 3.5rem;
+                text-align: center;
+  }
+}

@@ -4,27 +4,27 @@
   &--about {
     display: inline-block;
 
-    margin-left: $space-x-large;
-    margin-top: $space-x-small;
-    margin-bottom: $space-standard;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
 
     &::before {
       content: "</";
-      color: grey;
+      color: $c-decorations;
     }
 
     &::after {
       content: ">";
-      color: grey;
+      color: $c-decorations;
     }
   }
 
   &--aboutBracket {
-    color: grey;
-    margin-left: $space-x-large;
-    margin-top: $space-x-small;
-    margin-bottom: $space-standard;
+    color: $c-decorations;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
   }
 
@@ -35,6 +35,20 @@
   &--footer {
     margin: 0;
     font-size: 1.2rem;
-    color: $c-white;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .h3 {
+    &--aboutBracket {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 2rem;
+    }
+
+    &--project {
+      font-size: 1rem;
+    }
   }
 }

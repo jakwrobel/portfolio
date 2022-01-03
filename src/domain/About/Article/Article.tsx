@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./Article.module.scss";
 
-interface IArticle {
-  content: string;
-  variant: string;
+interface IArticleProps {
+  children: React.ReactNode;
 }
 
-export const Article: React.FC<IArticle> = ({ content, variant }) => {
-  return <article className={styles[`article--${variant}`]}>{content}</article>;
+export const Article = ({ children }: IArticleProps) => {
+  return <article className={styles.article}>{children}</article>;
 };

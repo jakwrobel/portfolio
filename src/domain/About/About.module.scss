@@ -1,39 +1,49 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
 .wrap {
-  @include setFlex(row, center, stretch);
-  height: 112.5vh;
-  background-color: white;
+  @include setFlex(column, flex-end, stretch);
+  position: relative;
+  height: 100vh;
+  min-height: 80rem;
+  padding: 0 12.5%;
+  box-sizing: border-box;
+  background-color: $c-background1;
   clip-path: ellipse(100% 60% at 50% 40%);
+
+  img{
+    position: absolute;
+    
+    &:nth-child(1){
+      top: 3%;
+      left: 5%;
+    }
+
+    &:nth-child(2){
+      top: 30%;
+      right: 5%;
+    }
+
+    &:nth-child(3){
+      top: 80%;
+      left: 5%;
+    }
+  }
 }
 
 .underlay {
   position: relative;
   z-index: 2;
-  background-color: $c-white-sand;
-}
-
-.leftCol {
-  width: 12.5%;
-}
-
-.midCol {
-  @include setFlex(column, flex-end, stretch);
-  width: 75%;
-}
-
-.rightCol {
-  width: 12.5%;
+  background-color: $c-background2;
 }
 
 .window {
   @include setFlex(column, flex-start, stretch);
   position: relative;
-  // top: 66vh;
+  top: 66vh;
   transition: 1s all linear;
-  height: 80%;
+  height: 90%;
   min-height: 41rem;
-  background-color: $c-white;
+  background-color: $c-background1;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   box-shadow: 1rem 0 2rem 1rem #f6f6f6, 0 -1rem 2rem 1rem #f6f6f6,
@@ -43,11 +53,12 @@
 .content {
   @include setFlex(row, flex-start, stretch);
   height: 92%;
-  color: #e67095;
+  color: $c-secondary;
 }
 
 @media only screen and (max-width: 48em) {
   .wrap {
+    padding: 0;
     clip-path: ellipse(140% 60% at 50% 40%);
   }
 }
@@ -55,5 +66,13 @@
 @media only screen and (max-width: 30em) {
   .wrap {
     clip-path: ellipse(180% 60% at 50% 40%);
+  }
+
+  .window{
+    min-height: 82rem;
+  }
+
+  .content {
+    @include setFlex(column, center, center);
   }
 }

@@ -1,40 +1,57 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
+.label {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #ffffff;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
 
 .input {
-  &--contact {
+  &Contact {
     height: 2rem;
-    margin-top: $space-small;
-    margin-bottom: $space-standard;
-    background-color: $c-white;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: $c-background1;
     border: none;
     border-radius: 0.5rem;
     outline: none;
 
     &:focus {
       transition: 0.2s background-color linear;
-      background-color: $c-deepBlush;
-      color: $c-white;
+      background-color: $c-primary;
+      color: #ffffff;
     }
   }
 
-  &--submit {
+  &Submit {
     @include setFlex(row, center, center);
     align-self: center;
     width: 40%;
     height: 15%;
-    margin-top: $space-x-large;
+    margin-top: 2rem;
     background-color: transparent;
-    color: $c-white;
+    color: #ffffff;
     font-weight: 600;
-    border: 1px solid $c-deepBlush;
+    border: 1px solid $c-primary;
     @include borderRadius(20%, 50%);
 
     &:hover {
       transition: 0.2s all linear;
       cursor: pointer;
-      background-color: $c-deepBlush;
+      background-color: $c-primary;
       transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .input {
+    &Submit {
+      height: 10%;
     }
   }
 }

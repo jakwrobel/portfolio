@@ -3,7 +3,7 @@ import styles from "./H2.module.scss"
 
 interface IH2{
     content: string
-    variant: string
+    variant: "showcase" | "about" | "projects" | "project" | "contact"
 }
 
 export const H2: React.FC <IH2> = ({content, variant})=>{

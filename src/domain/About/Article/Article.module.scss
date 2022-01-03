@@ -1,22 +1,40 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
 .article {
-  &--about {
-    margin: $space-x-large $space-standard $space-x-large $space-x-large;
-    font-family: monospace;
-    font-size: 2rem;
-    padding-left: $space-large;
-    border-left: 1px solid $c-iron;
-    box-sizing: border-box;
+  margin: 2rem 1rem 2rem 2rem;
+  font-family: monospace;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid #e6e7e8;
+  box-sizing: border-box;
 
-    &::before{
-        content: open-quote" ";
-        color: grey;
-    }
+  &::before {
+    content: open-quote " ";
+    color: $c-decorations;
+  }
 
-    &::after{
-        content: " "close-quote;
-        color: grey;
-    }
+  &::after {
+    content: " " close-quote;
+    color: $c-decorations;
+  }
+}
+
+@media only screen and (max-width:64em){
+  .article{
+    margin: 1.5rem 1rem 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width:48em){
+  .article{
+    margin: 1rem 1rem 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:30em){
+  .wrap{
+    font-size: 1.2rem;
   }
 }

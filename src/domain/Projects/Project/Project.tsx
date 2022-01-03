@@ -4,32 +4,32 @@ import { H3 } from "../../../components/H3/H3";
 import { Anchor } from "../../../components/Anchor/Anchor";
 import styles from "./Project.module.scss";
 
-interface IProject {
+interface IProjectProps {
   name: string;
   technology: string;
   imgUrl: string;
-  viewUrl: string | undefined;
-  codeUrl: string | undefined;
+  viewUrl: string;
+  codeUrl: string;
 }
 
-export const Project: React.FC<IProject> = ({
+export const Project = ({
   name,
   technology,
   imgUrl,
   viewUrl,
   codeUrl,
-}) => {
+}: IProjectProps) => {
   return (
-    <div className={styles.project__wrap}>
+    <div className={styles.wrap}>
       <img src={imgUrl} alt={name} />
-      <div className={styles.project__overlay}>
-        <section className={styles.project__titleWrap}>
+      <div className={styles.overlay}>
+        <section className={styles.titleWrap}>
           <H2 content={name} variant="project" />
           <H3 content={technology} variant="project" />
         </section>
-        <div className={styles.project__buttonsWrap}>
-          <Anchor href={viewUrl} content="View" variant="project"/>
-          <Anchor href={codeUrl} content="Code" variant="project"/>
+        <div className={styles.buttonsWrap}>
+          <Anchor href={viewUrl} content="View" variant="project" />
+          <Anchor href={codeUrl} content="Code" variant="project" />
         </div>
       </div>
     </div>

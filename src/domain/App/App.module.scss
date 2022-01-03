@@ -1,14 +1,11 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
-.wrap{
 
-}
-
-.downPart{
-    width: 100%;
-    height: 77vh;
-    min-height: 42.8rem;
-    box-sizing: border-box;
-    z-index: -1;
-    background-color: $c-baltic-sea;
+.downPart {
+  width: 100%;
+  height: 77vh;
+  min-height: 42.8rem;
+  box-sizing: border-box;
+  z-index: -1;
+  background-color: $c-background3;
 }

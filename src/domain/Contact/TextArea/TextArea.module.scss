@@ -1,18 +1,28 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
+.label {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #ffffff;
+
+  &::first-letter{
+    text-transform: capitalize;
+  }
+}
 .textarea {
   height: 20%;
-  margin-top: $space-small;
-  margin-bottom: $space-standard;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   resize: none;
   outline: none;
+  background-color: $c-background1;
   border-radius: 1rem;
   border: none;
   min-height: 5.6rem;
 
   &:focus {
     transition: 0.2s background-color linear;
-    color: $c-white;
-    background-color: $c-deepBlush;
+    color: #ffffff;
+    background-color: $c-primary;
   }
 }

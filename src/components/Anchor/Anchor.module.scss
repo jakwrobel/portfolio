@@ -5,26 +5,26 @@
   &--menu {
     @include setFlex(row, center, center);
     width: 50%;
-    padding: $space-small $space-large;
-    margin: 0 $space-standard;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
     text-align: center;
-    font: $font-menu-small;
+    font: 1.6rem Lato;
     white-space: nowrap;
     @include borderRadius(30%, 50%);
     text-decoration: none;
-    color: $c-scorpion;
+    color: #5d5d5d;
     transition: 0.3s background-color linear;
 
     &:hover {
       cursor: pointer;
-      background-color: $c-deepBlush;
-      color: $c-white;
+      background-color: $c-secondary;
+      color: #ffffff;
     }
   }
 
-  &--icon {
+  &--menuIcon {
     @include setFlex(row, center, center);
-    margin: 0 $space-standard;
+    margin: 0 1rem;
 
     &:hover {
       cursor: pointer;
@@ -38,24 +38,21 @@
     width: 30%;
     min-width: 11rem;
     text-decoration: none;
-    color: $c-deepBlush;
+    color: $c-secondary;
     font-size: 1.6rem;
     line-height: 3.2rem;
     @include borderRadius(10%, 50%);
 
-    &:hover {
-      background-color: $c-deepBlush;
+    &:first-child {
+      margin-right: 10%;
+      border: 1px solid $c-secondary;
       box-sizing: border-box;
-      color: $c-white;
-      transition: 0.3s all linear;
     }
 
-    &:first-child {
-      border: 1px solid $c-deepBlush;
-      @include borderRadius(10%, 50%);
-      box-sizing: border-box;
-      font-weight: 600;
-      margin-right: 10%;
+    &:hover {
+      background-color: $c-secondary;
+      color: #ffffff;
+      transition: 0.3s all linear;
     }
   }
 
@@ -75,25 +72,42 @@
     &:hover {
       transition: 0.2s transform linear;
       transform: scale(1.1);
-      border: 3px solid $c-white;
       cursor: pointer;
     }
   }
 
-  &--footer {
+  &--footerIcon {
     @include setFlex(row, center, center);
     width: 3rem;
     height: 3rem;
     min-width: 25px;
     min-height: 25px;
-    background-color: $c-tuna;
+    background-color: $c-footer-item;
     border-radius: 4px;
 
     &:hover {
       cursor: pointer;
       transition: 0.3s all linear;
-      background-color: $c-deepBlush;
+      background-color: $c-primary;
       transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .anchor {
+    &--project {
+      height: 70%;
+      min-height: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .anchor {
+    &--project {
+      height: 50%;
+      min-height: 2.5rem;
     }
   }
 }

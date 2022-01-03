@@ -1,19 +1,19 @@
 import React from "react";
+import { StyledLevel } from "./StyledLevel";
 import styles from "./Skill.module.scss";
 
-interface ISkill {
+interface ISkillProps {
   name: string;
-  level: string;
-  order: string;
+  value: string;
 }
 
-export const Skill: React.FC<ISkill> = ({ name, level, order }) => {
+export const Skill = ({ name, value}:ISkillProps) => {
   return (
-    <div className={styles.skill__wrap}>
-      <div className={styles.skill__bar}>
-        <div className={styles[`skill__level--${order}`]}>{name}</div>
+    <div className={styles.wrap}>
+      <div className={styles.bar}>
+        <StyledLevel value={value} />
       </div>
-      <div className={styles.skill__number}>{level}</div>
+      <div className={styles.number}>{value}</div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import styles from "./Anchor.module.scss";
 interface IAnchor {
   content: string | JSX.Element;
   href: string | undefined;
-  variant: "menu" | "icon" | "showcase" |"project" | "footer";
+  variant: "menu" | "menuIcon" | "footerIcon" | "showcase" |"project" | "footer";
 }
 
 export const Anchor: React.FC<IAnchor> = ({ content, href, variant }) => {

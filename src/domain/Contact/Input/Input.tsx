@@ -1,13 +1,34 @@
 import React from "react";
+
 import styles from "./Input.module.scss";
 
-interface IInput{
-    type: string
-    name: string
-    value?: string
-    variant?: string
+interface IInputProps {
+  name: string;
+  type: string;
+  value?: string;
+  variant?: "Contact" | "Submit";
 }
 
-export const Input: React.FC <IInput> = ({ type, name, variant, value }) => {
-  return <input type={type} name={name} id={name} value={value} className={styles[`input--${variant}`]} />;
+export const Input = ({
+  name,
+  type,
+  variant,
+  value,
+}:IInputProps) => {
+  return (
+    <>
+      {type !== "submit" && (
+        <label htmlFor={name} className={styles.label}>
+          {name}:
+        </label>
+      )}
+      <input
+        type={type}
+        name={name}
+        id={name}
+        value={value}
+        className={styles[`input${variant}`]}
+      />
+    </>
+  );
 };

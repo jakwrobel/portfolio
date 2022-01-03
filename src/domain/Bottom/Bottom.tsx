@@ -2,26 +2,27 @@ import React from "react";
 import { Arrow } from "./Arrow/Arrow";
 import { Anchor } from "../../components/Anchor/Anchor";
 import { Footer } from "./Footer/Footer";
+import styles from "./Bottom.module.scss";
 
 export const Bottom = () => {
   return (
-    <div className="footer">
+    <div className={styles.footer}>
       <Arrow />
-      <div className="footer__icons-wrap">
+      <div className={styles.iconsWrap}>
         <Anchor
-          content={<img src="../../../../images/footer_facebook.png" />}
+          content={<img src="./images/facebook.png" alt="facebook" />}
           href="https://www.facebook.com/kuba.wrobel.1"
-          variant="footer"
+          variant="footerIcon"
         />
         <Anchor
-          content={<img src="../../../../images/footer_instagram.png" />}
+          content={<img src="./images/instagram.png" alt="instagram" />}
           href="/"
-          variant="footer"
+          variant="footerIcon"
         />
         <Anchor
-          content={<img src="../../../../images/footer_linkedin.png" />}
+          content={<img src="../../images/linkedin.png" alt="linkedin" />}
           href="https://www.linkedin.com/in/jakub-wr%C3%B3bel-731931201/"
-          variant="footer"
+          variant="footerIcon"
         />
       </div>
       <Footer />

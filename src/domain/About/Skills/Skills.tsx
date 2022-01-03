@@ -1,17 +1,17 @@
 import React from "react";
 import { H3 } from "../../../components/H3/H3";
-import {Skill} from "./skill";
-import skills from "../../../skills.json";
+import { Skill } from "./skill";
+import skills from "../../../data/skills.json";
 import styles from "./Skills.module.scss";
 
 export const Skills = () => {
   return (
-    <div className={styles.skills__wrap}>
+    <div className={styles.wrap}>
       <H3 content="Skills" variant="about" />
 
-      <div className={styles.skills__barsWrap}>
+      <div className={styles.barsWrap}>
         {skills.map((skill) => (
-          <Skill name={skill.name} level={skill.level} order={skill.order} />
+          <Skill name={skill.name} value={skill.value} />
         ))}
       </div>
     </div>

@@ -1,95 +1,57 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
-.introduction {
-  
-  &__wrap {
-    @include setFlex(row, center, center);
-    position: relative;
-    height: 67.5vh;
-    margin-top: 10vh;
-    background-color: $c-white;
-    box-sizing: border-box;
-    z-index: 2;
+.wrap {
+  @include setFlex(row, flex-start, center);
+  position: relative;
+  width: 87.5%;
+  height: 67.5vh;
+  margin-top: 10vh;
+  padding-left: 12.5%;
+  background-color: $c-background1;
+  overflow: hidden;
+  z-index: 2;
 
-    > img {
-      position: absolute;
+  > img {
+    position: absolute;
 
-      @each $numb, $top, $left, $side in $imgPos {
-        &:nth-child(#{$numb}) {
-          top: $top * 1%;
-          #{$side}: $left * 1%;
-        }
-      }
+    &:nth-child(1){
+      top: 10%;
+      left: 14%;
     }
-  }
 
-  &__leftCol {
-    width: 12.5%;
-  }
-
-  &__midCol {
-    @include setFlex(row, center, stretch);
-    width: 75%;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-
-  &__rightCol {
-    @include setFlex(column, flex-start, stretch);
-    width: 12.5%;
-  }
-}
-
-.right {
-  &__wrap {
-    @include setFlex(column, center, stetch);
-    height: 37.5%;
-    min-height: 30rem;
-  }
-
-  &__stripe {
-    height: 30rem;
-    background-color: $c-deepBlush;
+    &:nth-child(2){
+      top: 80%;
+      left: 60%;
+    }
   }
 }
 
 @media only screen and (max-width: 64em) {
-  .introduction {
-    &__leftCol {
-      width: 10%;
-    }
+  .wrap {
+    width: 90%;
+    padding-left: 10%;
+  }
+}
 
-    &__midCol {
-      width: 80%;
-    }
+@media only screen and (max-width: 48em) {
+  .wrap {
+    @include setFlex(column, space-evenly, center);
+    width: 100%;
+    height: 150vh;
+    min-height: 100rem;
+    padding: 0;
 
-    &__rightCol {
-      width: 10%;
+    > img {
+      display: none;
     }
   }
 }
 
 @media only screen and (max-width: 48em) {
-  .introduction {
-    &__wrap {
-      height: 300vh;
-      min-height: 165rem;
-
-      > img {
-        display: none;
-      }
-    }
-
-    &__left-col {
-      width: 0;
-    }
-
-    &__mid-col {
-      width: 100%;
-    }
-
-    &__right-col {
-      width: 0;
-    }
+  .stripe{
+    width: 55%;
+  }
+  .content {
+    margin: 0;
   }
 }

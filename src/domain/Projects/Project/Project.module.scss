@@ -1,60 +1,60 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
-.project {
-  &__wrap {
-    position: relative;
-    width: 29%;
-    height: 50%;
-    margin: 1rem 1rem;
-    border-radius: 1rem;
+.wrap {
+  position: relative;
+  width: 29%;
+  height: 50%;
+  margin: 1rem 1rem;
+  border-radius: 1rem;
 
-    > img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 1rem;
-    }
-  }
-
-  &__titleWrap {
-    text-align: center;
-    color: transparent;
-  }
-
-  &__overlay {
-    @include setFlex(column, space-around, center);
-    padding-bottom: 10%;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
+  > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 1rem;
+  }
+}
 
-    &:hover {
-      transition: 1s all linear;
-      background: linear-gradient(
-        120deg,
-        rgba(230, 112, 149, 0.8) 65%,
-        rgba(230, 112, 149, 0.5) 0%
-      );
+.titleWrap {
+  text-align: center;
+  color: transparent;
+}
 
-      .project__titleWrap {
-        transition: 1.2s all linear;
-        color: $c-white;
-      }
+.overlay {
+  @include setFlex(column, space-around, center);
+  padding-bottom: 10%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
 
-      a {
-        color: $c-white;
-        border-color: $c-white;
-      }
+  &:hover {
+    transition: 1s all linear;
+   background-color: $c-primary;
+
+    .titleWrap {
+      transition: 1.2s all linear;
+      color: $c-secondary;
+    }
+
+    a {
+      color: #49306b;
+      border-color: #49306b;
     }
   }
+}
 
-  &__buttonsWrap {
-    @include setFlex(row, space-around, center);
-    width: 100%;
-    height: 20%;
+.buttonsWrap {
+  @include setFlex(row, space-around, center);
+  width: 100%;
+  height: 20%;
+}
+
+@media only screen and (max-width: 30em) {
+  .wrap {
+    width: 40%;
   }
 }

@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./Navigation.module.scss";
 
-export const Navigation: React.FC = ({ children }) => {
-  return <div className={styles.navigation}>{children}</div>;
+interface INavigationProps{
+  children: React.ReactNode
+}
+
+export const Navigation = ({ children }: INavigationProps) => {
+  return <div className={styles.wrap}>{children}</div>;
 };

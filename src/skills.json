@@ -1,7 +1,0 @@
-[
-  { "name": "HTML", "level": "100%", "order": "first" },
-  { "name": "CSS", "level": "95%", "order": "second" },
-  { "name": "JavaScript", "level": "90%", "order": "third" },
-  { "name": "SCSS", "level": "85%", "order": "fourth" },
-  { "name": "React", "level": "90%", "order": "fifth" }
-]

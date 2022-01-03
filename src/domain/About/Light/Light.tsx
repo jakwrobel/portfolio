@@ -1,12 +1,28 @@
-import React from "react";
-import styles from "./Light.module.scss";
+import React, { useEffect, useState } from "react";
+import { useRef } from "react";
+import { StyledLight } from "./StyledLight";
 
-interface ILight{
-    variant: string
+interface ILightProps {
+  variant: "Red" | "Yellow" | "Green";
 }
 
-export const Light: React.FC <ILight> = ({variant})=>{
-    return(
-        <div className={styles[`light--${variant}`]}></div>
-    )
-}
+export const Light = ({ variant }: ILightProps) => {
+  const [width, setWidth] = useState(20);
+  const LightRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (LightRef && LightRef.current) {
+      setWidth(LightRef.current.offsetWidth);
+    }
+  }, []);
+
+  useEffect(() =>
+    window.addEventListener("resize", () => {
+      if (LightRef && LightRef.current) {
+        setWidth(LightRef.current.offsetWidth);
+      }
+    })
+  );
+
+  return <StyledLight ref={LightRef} variant={variant} width={width} />;
+};

@@ -1,4 +1,4 @@
-import "../../styles/themes/default/theme.scss";
+import "../../styles/styles.scss";
 import { Menu } from "../Menu/Menu";
 import { Introduction } from "../Introduction/Introduction";
 import { About } from "../About/About";
@@ -6,10 +6,11 @@ import { Projects } from "../Projects/Projects";
 import { Contact } from "../Contact/Contact";
 import { Bottom } from "../Bottom/Bottom";
 import styles from "./App.module.scss";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <div className={styles.wrap}>
+    <>
       <Menu />
       <Introduction />
       <About />
@@ -17,8 +18,8 @@ function App() {
       <div className={styles.downPart} id="contact"></div>
       <Contact />
       <Bottom />
-    </div>
+    </>
   );
-}
+};
 
 export default App;
