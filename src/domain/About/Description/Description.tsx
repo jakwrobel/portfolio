@@ -1,7 +1,7 @@
 import React from "react";
-import { H3 } from "../../../components/H3/H3";
-import { Article } from "../Article/Article";
-import styles from "./Description.module.scss";
+import { H3 } from "components/H3/H3";
+import { Article } from "domain/About/Article/Article";
+import styles from "domain/About/Description/Description.module.scss";
 
 export const Description = () => {
   return (

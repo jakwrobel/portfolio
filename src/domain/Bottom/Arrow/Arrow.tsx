@@ -1,6 +1,6 @@
 import React from "react";
-import functions from "../functions"
-import styles from "./Arrow.module.scss";
+import functions from "domain/Bottom/functions"
+import styles from "domain/Bottom/Arrow/Arrow.module.scss";
 
 export const Arrow = () => {
   return (

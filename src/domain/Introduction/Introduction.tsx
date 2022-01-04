@@ -1,13 +1,15 @@
 import React from "react";
-import { Showcase } from "./Showcase/Showcase";
-import { Stripe } from "./Stripe/Stripe";
-import styles from "./Introduction.module.scss";
+import { Showcase } from "domain/Introduction/Showcase/Showcase";
+import { Stripe } from "domain/Introduction/Stripe/Stripe";
+import styles from "domain/Introduction/Introduction.module.scss";
+import zigzag1 from "assets/zigzag1.png"
+import zigzag2 from "assets/zigzag2.png"
 
 export const Introduction = () => {
   return (
     <div className={styles.wrap}>
-      <img src="./images/zigzag1.png" alt="background" />
-      <img src="./images/zigzag2.png" alt="background" />
+      <img src={zigzag1} alt="background" />
+      <img src={zigzag2} alt="background" />
       <Showcase />
       <Stripe />
     </div>

@@ -1,12 +1,12 @@
-import "../../styles/styles.scss";
-import { Menu } from "../Menu/Menu";
-import { Introduction } from "../Introduction/Introduction";
-import { About } from "../About/About";
-import { Projects } from "../Projects/Projects";
-import { Contact } from "../Contact/Contact";
-import { Bottom } from "../Bottom/Bottom";
-import styles from "./App.module.scss";
 import React from "react";
+import { Menu } from "domain/Menu/Menu";
+import { Introduction } from "domain/Introduction/Introduction";
+import { About } from "domain/About/About";
+import { Projects } from "domain/Projects/Projects";
+import { Contact } from "domain/Contact/Contact";
+import { Bottom } from "domain/Bottom/Bottom";
+import styles from "domain/App/App.module.scss";
+import "styles/styles.scss";
 
 const App = () => {
   return (

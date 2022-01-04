@@ -1,6 +1,6 @@
 import React from "react";
-import { H2 } from "../../../components/H2/H2";
-import styles from "./Svg.module.scss";
+import { H2 } from "components/H2/H2";
+import styles from "domain/Projects/Svg/Svg.module.scss";
 
 export const Svg = () => {
   return (

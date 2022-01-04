@@ -1,6 +1,6 @@
 import React from "react";
-import functions from "../functions";
-import styles from "./Hamburger.module.scss";
+import functions from "domain/Menu/functions";
+import styles from "domain/Menu/Hamburger/Hamburger.module.scss";
 
 export const Hamburger = () => {
   return (

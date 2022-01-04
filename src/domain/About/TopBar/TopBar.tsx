@@ -1,6 +1,6 @@
 import React from "react";
-import { Light } from "../Light/Light";
-import styles from "./TopBar.module.scss";
+import { Light } from "domain/About/Light/Light";
+import styles from "domain/About/TopBar/TopBar.module.scss";
 
 export const TopBar = () => {
   return (

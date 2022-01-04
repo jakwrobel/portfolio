@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Article.module.scss";
+import styles from "domain/About/Article/Article.module.scss";
 
 interface IArticleProps {
   children: React.ReactNode;

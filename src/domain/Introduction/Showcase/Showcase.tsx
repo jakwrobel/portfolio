@@ -1,8 +1,8 @@
 import React from "react";
-import { Anchor } from "../../../components/Anchor/Anchor";
-import { H1 } from "../H1/H1";
-import { H2 } from "../../../components/H2/H2";
-import styles from "./Showcase.module.scss";
+import { Anchor } from "components/Anchor/Anchor";
+import { H1 } from "domain/Introduction/H1/H1";
+import { H2 } from "components/H2/H2";
+import styles from "domain/Introduction/Showcase/Showcase.module.scss";
 
 export const Showcase = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import { StyledLevel } from "./StyledLevel";
-import styles from "./Skill.module.scss";
+import { StyledLevel } from "domain/About/Skills/StyledLevel";
+import styles from "domain/About/Skills/Skill.module.scss";
 
 interface ISkillProps {
   name: string;

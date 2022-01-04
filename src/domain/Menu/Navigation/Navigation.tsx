@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Navigation.module.scss";
+import styles from "domain/Menu/Navigation/Navigation.module.scss";
 
 interface INavigationProps{
   children: React.ReactNode

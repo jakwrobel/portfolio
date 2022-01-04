@@ -2,7 +2,7 @@
   {
     "name": "Portfolio",
     "technology": "React / JSX / SCSS",
-    "imageUrl": "./images/project_portfolio.webp",
+    "imageUrl": "portfolio.webp",
     "viewUrl": "https://jakwrobel.github.io/portfolio/",
     "codeUrl": "https://github.com/jakwrobel/portfolio"
   },

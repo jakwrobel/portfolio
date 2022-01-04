@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import { StyledLight } from "./StyledLight";
+import { StyledLight } from "domain/About/Light/StyledLight";
 
 interface ILightProps {
   variant: "Red" | "Yellow" | "Green";

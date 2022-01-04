@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./TextArea.module.scss";
+import styles from "domain/Contact/TextArea/TextArea.module.scss";
 
 interface ITextAreaProps {
   name: string;

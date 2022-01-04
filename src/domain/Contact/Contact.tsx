@@ -1,8 +1,8 @@
 import React from "react";
-import { Input } from "./Input/Input";
-import { TextArea } from "./TextArea/TextArea";
-import { Decoration } from "./Decoration/Decoration";
-import styles from "./Contact.module.scss";
+import { Input } from "domain/Contact/Input/Input";
+import { TextArea } from "domain/Contact/TextArea/TextArea";
+import { Decoration } from "domain/Contact/Decoration/Decoration";
+import styles from "domain/Contact/Contact.module.scss";
 
 export const Contact = () => {
   return (

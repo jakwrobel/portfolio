@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import styles from "./Stripe.module.scss";
-import functions from "../functions";
+import styles from "domain/Introduction/Stripe/Stripe.module.scss";
+import functions from "domain/Introduction/functions";
+import me from "assets/ja-big.webp"
 
 export const Stripe = () => {
   useEffect(
@@ -25,7 +26,7 @@ export const Stripe = () => {
         </svg>
       </div>
       <div className={styles.circle}></div>
-      <img src="./images/ja-big.webp" alt="Jakub Wróbel" />
+      <img src={me} alt="Jakub Wróbel" />
     </div>
   );
 };

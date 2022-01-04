@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Decoration.module.scss";
+import styles from "domain/Contact/Decoration/Decoration.module.scss";
 
 export const Decoration = () => {
   return (

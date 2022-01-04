@@ -1,9 +1,9 @@
 import React from "react";
-import projects from "../../data/projects.json";
-import { Project } from "./Project/Project";
-import { H2 } from "../../components/H2/H2";
-import { Svg } from "./Svg/Svg";
-import styles from "./Projects.module.scss";
+import projects from "data/projects.json";
+import { Project } from "domain/Projects/Project/Project";
+import { H2 } from "components/H2/H2";
+import { Svg } from "domain/Projects/Svg/Svg";
+import styles from "domain/Projects/Projects.module.scss";
 
 export const Projects = () => {
   return (
