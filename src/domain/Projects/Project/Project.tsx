@@ -1,8 +1,8 @@
 import React from "react";
-import { H2 } from "../../../components/H2/H2";
-import { H3 } from "../../../components/H3/H3";
-import { Anchor } from "../../../components/Anchor/Anchor";
-import styles from "./Project.module.scss";
+import { H2 } from "components/H2/H2";
+import { H3 } from "components/H3/H3";
+import { Anchor } from "components/Anchor/Anchor";
+import styles from "domain/Projects/Project/Project.module.scss";
 
 interface IProjectProps {
   name: string;

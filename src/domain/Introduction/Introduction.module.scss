@@ -1,5 +1,5 @@
-@import "../../styles/mixins.scss";
-@import "../../styles/variables.scss";
+@import "styles/mixins.scss";
+@import "styles/variables.scss";
 .wrap {
   @include setFlex(row, flex-start, center);
   position: relative;

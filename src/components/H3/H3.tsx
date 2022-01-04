@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./H3.module.scss";
+import styles from "components/H3/H3.module.scss";
 
 interface IH3 {
   content: string;

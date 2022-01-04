@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Anchor.module.scss";
+import styles from "components/Anchor/Anchor.module.scss";
 
 interface IAnchor {
   content: string | JSX.Element;

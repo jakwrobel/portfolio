@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./H2.module.scss"
+import styles from "components/H2/H2.module.scss"
 
 interface IH2{
     content: string

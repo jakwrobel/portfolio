@@ -1,8 +1,8 @@
 import React from "react";
 import { H3 } from "components/H3/H3";
 import { Skill } from "domain/About/Skills/Skill";
-import skills from "../../../data/skills.json";
-import styles from "./Skills.module.scss";
+import skills from "data/skills.json";
+import styles from "domain/About/Skills/Skills.module.scss";
 
 export const Skills = () => {
   return (

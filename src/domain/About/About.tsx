@@ -3,11 +3,11 @@ import { TopBar } from "domain/About/TopBar/TopBar";
 import { Description } from "domain/About/Description/Description";
 import { H2 } from "components/H2/H2";
 import { Skills } from "domain/About/Skills/Skills";
-import functions from "./functions";
-import styles from "domain/About/About.module.scss";
 import zigzag3 from "assets/zigzag3.png";
 import zigzag4 from "assets/zigzag4.png";
 import zigzag5 from "assets/zigzag5.png";
+import functions from "domain/About/functions";
+import styles from "domain/About/About.module.scss";
 
 export const About = () => {
   useEffect(

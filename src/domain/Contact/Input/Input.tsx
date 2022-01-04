@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "domain/Contact/Input/Input.module.scss";
 
 interface IInputProps {
@@ -9,12 +8,7 @@ interface IInputProps {
   variant?: "Contact" | "Submit";
 }
 
-export const Input = ({
-  name,
-  type,
-  variant,
-  value,
-}:IInputProps) => {
+export const Input = ({ name, type, variant, value }: IInputProps) => {
   return (
     <>
       {type !== "submit" && (

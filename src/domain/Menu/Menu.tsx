@@ -2,10 +2,10 @@ import React from "react";
 import { Navigation } from "domain/Menu/Navigation/Navigation";
 import { Anchor } from "components/Anchor/Anchor";
 import { Hamburger } from "domain/Menu/Hamburger/Hamburger";
+import facebook from "assets/facebook.png";
+import instagram from "assets/instagram.png";
+import linkedin from "assets/linkedin.png";
 import styles from "domain/Menu/Menu.module.scss";
-import facebook from "assets/facebook.png"
-import instagram from "assets/instagram.png"
-import linkedin from "assets/linkedin.png"
 
 export const Menu: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ export const Menu: React.FC = () => {
             variant="menuIcon"
           />
           <Anchor
-            content={<img src={linkedin}alt="LinkedIn" />}
+            content={<img src={linkedin} alt="LinkedIn" />}
             href="https://www.linkedin.com/in/jakub-wr%C3%B3bel-731931201/"
             variant="menuIcon"
           />
